@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Gerar um documento de registro para um formulário adaptável headless {#generate-a-document-of-record-for-a-headless-adaptive-form}
 
-<span class="preview"> Este é um **TRABALHO EM ANDAMENTO** artigo.</span>
+<span class="preview"> Este é um artigo **TRABALHO EM ANDAMENTO**.</span>

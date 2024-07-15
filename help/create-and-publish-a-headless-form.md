@@ -1,5 +1,5 @@
 ---
-title: Criar e publicar um formulário headless com o Adobe Experience Manager Adaptive Forms | Guia Passo a Passo
+title: Crie e Publish um formulário headless com o Adobe Experience Manager Adaptive Forms | Guia Passo a Passo
 description: Saiba como criar e publicar um formulário headless usando formulários adaptáveis do Adobe Experience Manager neste guia passo a passo. Descubra hoje mesmo os benefícios de se tornar headless e simplificar seu processo de criação de formulários. Comece a criar formulários dinâmicos e responsivos que funcionam perfeitamente em dispositivos com o Adobe Experience Manager Headless Adaptive Forms.
 solution: Experience Manager Forms
 feature: Adaptive Forms
@@ -10,7 +10,7 @@ hide: false
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
 source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1004'
 ht-degree: 0%
 
 ---
@@ -30,13 +30,13 @@ Vamos começar:
 >
 > Este guia de introdução usa um aplicativo React. Você pode usar a tecnologia ou a linguagem de programação de sua escolha para usar formulários adaptáveis headless.
 
-## Antes de você iniciar {#pre-requisites}
+## Antes de começar {#pre-requisites}
 
 Para criar e executar um aplicativo React, você deve ter o seguinte instalado em seu computador:
 
-* Instale o [última versão do Git](https://git-scm.com/downloads). Se você é novo no Git, consulte [Instalação do Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+* Instale a [última versão do Git](https://git-scm.com/downloads). Se você é novo no Git, consulte [Instalando o Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-* Instalar [Node.js 16.13.0 ou posterior](https://nodejs.org/en/download/). Se você é novo no Node.js, consulte [Como instalar o Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
+* Instale o [Node.js 16.13.0 ou posterior](https://nodejs.org/en/download/). Se você é novo no Node.js, consulte [Como instalar o Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
 
 ## Introdução
 
@@ -60,12 +60,12 @@ O kit de início é um aplicativo React com um exemplo de formulário adaptável
    git clone https://github.com/adobe/react-starter-kit-aem-headless-forms
    ```
 
-   O comando cria um diretório chamado **react-starter-kit-aem-headless-forms** no local atual e clona o aplicativo inicial do React de formulários adaptáveis Headless nele. Juntamente com as configurações e a lista de dependências necessárias para renderizar o formulário, o diretório inclui o seguinte conteúdo importante:
+   O comando cria um diretório chamado **react-starter-kit-aem-headless-forms** no local atual e clona o aplicativo inicial React do formulário adaptável Headless nele. Juntamente com as configurações e a lista de dependências necessárias para renderizar o formulário, o diretório inclui o seguinte conteúdo importante:
 
-   * **Exemplo de formulário**: O kit inicial inclui um formulário de aplicativo de empréstimo de exemplo. Para exibir o formulário (definição de formulário) incluído no aplicativo, abra a `/react-starter-kit-aem-headless-forms/form-definations/form-model.json` arquivo.
-   * **Componentes de reação de exemplo**: o kit inicial inclui componentes de reação de amostra para Rich text e Slider. Este guia ajuda você a criar seus próprios componentes personalizados usando esses componentes Rich text e Slider.
-   * **Mapeamentos.ts**: o arquivo mappings.ts ajuda a mapear componentes personalizados com campos de formulário. Por exemplo, mapeie um campo de passo numérico com componente de classificações.
-   * **Configurações do ambiente**: as configurações de ambiente permitem renderizar um formulário incluído no kit inicial ou buscar um formulário de um servidor do AEM Forms.
+   * **Formulário de exemplo**: o kit inicial inclui um formulário de aplicativo de empréstimo de exemplo. Para exibir o formulário (definição de formulário) incluído no aplicativo, abra o arquivo `/react-starter-kit-aem-headless-forms/form-definations/form-model.json`.
+   * **Componentes de reação de exemplo**: o kit inicial inclui componentes de reação de exemplo para Rich text e Slider. Este guia ajuda você a criar seus próprios componentes personalizados usando esses componentes Rich text e Slider.
+   * **Mappings.ts**: o arquivo mappings.ts ajuda a mapear componentes personalizados com campos de formulário. Por exemplo, mapeie um campo de passo numérico com componente de classificações.
+   * **Configurações de ambiente**: as configurações de ambiente permitem renderizar um formulário incluído no kit inicial ou buscar um formulário de um AEM Forms Server.
 
    ![](/help/assets/getting-started-starter-kit-content.png)
 
@@ -75,13 +75,14 @@ O kit de início é um aplicativo React com um exemplo de formulário adaptável
    > Exemplos em documentos são baseados em VSCode. Você pode usar qualquer editor de código de texto simples.
 
 
-1. Navegue até a **react-starter-kit-aem-headless-forms** e execute o seguinte comando para instalar as dependências:
+1. Navegue até o diretório **react-starter-kit-aem-headless-forms** e execute o seguinte comando para instalar as dependências:
 
    ```shell
    npm install
    ```
 
-   O comando baixa todos os pacotes e bibliotecas necessários para executar e criar o aplicativo, como bibliotecas de formulários adaptáveis headless (@aemforms/af-response-renderer, @aemforms/af-response-components, @adobe/react-spectrum), executa validações e mantém dados para instâncias do formulário.
+   O comando baixa todos os pacotes e bibliotecas necessários para executar e criar o aplicativo, como formulários adaptáveis headless
+bibliotecas (@aemforms/af-response-renderer, @aemforms/af-response-components, @adobe/react-spectrum), executam validações e persistem dados para instâncias do formulário.
 
    ![](/help/assets/install-react-app-starter-kit.png)
 
@@ -90,7 +91,7 @@ O kit de início é um aplicativo React com um exemplo de formulário adaptável
 
 Depois de configurar o kit de início, você pode visualizar o formulário adaptável headless de amostra, substituí-lo pelo seu próprio formulário personalizado. Você também pode configurar o kit inicial para recuperar um formulário de um servidor do AEM Forms. Para visualizar o formulário
 
-1. Renomeie o `env_template` arquivo para `.env` arquivo. Além disso, verifique se a opção USE_LOCAL_JSON está definida como true.
+1. Renomeie o arquivo `env_template` para o arquivo `.env`. Além disso, verifique se a opção USE_LOCAL_JSON está definida como true.
 
    ![](/help/assets/rename-env-file.png)
 
@@ -115,7 +116,7 @@ Depois de configurar o kit de início, você pode visualizar o formulário adapt
 
 ## 3. Crie e renderize seu próprio formulário adaptável Headless{#custom}
 
-Um formulário adaptável headless representa o formulário e seus componentes, como campos e botões, no formato JSON (JavaScript Object Notation). A vantagem de usar o formato JSON é que ele pode ser facilmente analisado e usado por várias linguagens de programação, tornando-se uma maneira conveniente de trocar dados de formulário entre sistemas. Para visualizar o exemplo de formulário adaptável headless incluído no aplicativo, abra o `/react-starter-kit-aem-headless-forms/form-definations/form-model.json` arquivo.
+Um formulário adaptável headless representa o formulário e seus componentes, como campos e botões, no formato JSON (JavaScript Object Notation). A vantagem de usar o formato JSON é que ele pode ser facilmente analisado e usado por várias linguagens de programação, tornando-se uma maneira conveniente de trocar dados de formulário entre sistemas. Para exibir o exemplo de formulário adaptável headless incluído no aplicativo, abra o arquivo `/react-starter-kit-aem-headless-forms/form-definations/form-model.json`.
 
 Vamos criar um formulário de contato conosco com quatro campos: &quot;Nome&quot;, &quot;Email&quot;, &quot;Número de contato&quot; e &quot;Mensagem&quot;. Os campos são definidos como objetos (itens) no JSON, com cada objeto (item) tendo propriedades como tipo, rótulo, nome e obrigatório. O formulário também tem um botão do tipo &quot;enviar&quot;. Este é o JSON para o formulário.
 
@@ -181,13 +182,13 @@ Vamos criar um formulário de contato conosco com quatro campos: &quot;Nome&quot
 >[!NOTE]
 >
 > * O atributo &quot;afModelDefinition&quot; é necessário apenas para aplicativos React e não faz parte da definição do formulário.
-> * Você pode criar manualmente o formulário JSON ou usar o [Editor de formulários adaptáveis para AEM (editor WYSIWYG de formulários adaptáveis)](create-a-headless-adaptive-form.md) para criar e entregar o formulário JSON. Em um ambiente de produção, você usa o AEM Forms para fornecer o formulário JSON, mais informações sobre ele posteriormente.
+> * Você pode criar o formulário JSON manualmente ou usar o [editor de formulários adaptáveis para AEM (editor de formulários adaptáveis WYSIWYG)](create-a-headless-adaptive-form.md) para criar e entregar o formulário JSON. Em um ambiente de produção, você usa o AEM Forms para fornecer o formulário JSON, mais informações sobre ele posteriormente.
 > * O tutorial usa o https://pipedream.com/ para testar os envios de formulários. Você usa endpoints próprios ou de terceiros aprovados pela organização para receber os dados de um Formulário adaptável headless.
 
 
-Para renderizar o formulário, substitua a amostra de formulário adaptável headless JSON `/react-starter-kit-aem-headless-forms/form-definations/form-model.json` com o JSON acima, salve o arquivo e aguarde o kit inicial compilar e atualizar o formulário.
+Para renderizar o formulário, substitua o formulário adaptável headless de amostra JSON `/react-starter-kit-aem-headless-forms/form-definations/form-model.json` pelo JSON acima, salve o arquivo, aguarde o kit inicial compilar e atualize o formulário.
 
-![Substitua o exemplo de formulário adaptável headless JSON `/react-starter-kit-aem-headless-forms/form-definations/form-model.json` com o formulário adaptável personalizado headless JSON](assets/render-custom-headless-adaptive-form.png)
+![Substitua o formulário adaptável headless de amostra JSON `/react-starter-kit-aem-headless-forms/form-definations/form-model.json` pelo formulário adaptável headless personalizado JSON](assets/render-custom-headless-adaptive-form.png)
 
 <!-- Your form is ready. Let's add some validations and make "Name", "Email", and "Message" fields mandatory. -->
 
@@ -196,16 +197,16 @@ Você renderizou com êxito o Formulário adaptável headless.
 
 ## Bônus
 
-Vamos definir o título da página da Web que hospeda o formulário como `Contact Us | WKND Adventures and Travel`. Para alterar o título, abra o _react-starter-kit-aem-headless-forms/public/index.html_ arquivo para edição e defina o título.
+Vamos definir o título da página da Web que hospeda o formulário como `Contact Us | WKND Adventures and Travel`. Para alterar o título, abra o arquivo _react-starter-kit-aem-headless-forms/public/index.html_ para edição e defina o título.
 
 ![](assets/contact-us-headless-adaptive-forms-updated-title.png)
 
 
 ## Próxima etapa
 
-Por padrão, o kit inicial usa [Adobe Espectro](https://spectrum.adobe.com/) componentes para renderizar o formulário. Você pode usar a opção criar e usar seus próprios componentes ou componentes de terceiros. Por exemplo, usando a Google Material UI ou a Chakra UI.
+Por padrão, o kit inicial usa componentes de [Espectro de Adobe](https://spectrum.adobe.com/) para renderizar o formulário. Você pode usar a opção criar e usar seus próprios componentes ou componentes de terceiros. Por exemplo, usando a Google Material UI ou a Chakra UI.
 
-Vamos [usar a interface do usuário de material do Google](use-google-material-ui-react-components-to-render-a-headless-form.md) para renderizar nosso formulário Fale Conosco.
+Vamos [usar a Interface do Usuário do Material do Google](use-google-material-ui-react-components-to-render-a-headless-form.md) para renderizar nosso formulário Fale Conosco.
 
 
 

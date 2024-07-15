@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Localizar um formulário adaptável headless {#localize-a-headless-adaptive-form}
 
-<span class="preview"> Este é um **TRABALHO EM ANDAMENTO** artigo.</span>
+<span class="preview"> Este é um artigo **TRABALHO EM ANDAMENTO**.</span>

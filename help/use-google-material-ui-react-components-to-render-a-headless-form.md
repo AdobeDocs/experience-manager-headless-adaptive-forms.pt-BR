@@ -10,7 +10,7 @@ hide: false
 exl-id: 476509d5-f4c1-4d1c-b124-4c278f67b1ef
 source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '863'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Esses componentes atendem a dois objetivos principais: controlar a aparência ou
 
 Neste tutorial, os componentes da interface do usuário de materiais do Google são empregados para demonstrar como renderizar um formulário adaptável headless usando componentes personalizados do React. No entanto, você não está limitado a esta biblioteca e pode utilizar qualquer biblioteca de componentes do React ou desenvolver seus próprios componentes personalizados.
 
-Na conclusão do presente artigo, a Comissão _Entre em contato_ formulário criado em [Criar e publicar um formulário headless usando o kit inicial](create-and-publish-a-headless-form.md) O artigo se transforma no seguinte:
+Na conclusão deste artigo, o artigo _Fale Conosco_ criado em [Criar e publicar um formulário headless usando o kit de início](create-and-publish-a-headless-form.md) transforma-se no seguinte:
 
 ![](assets/headless-adaptive-form-with-google-material-ui-components.png)
 
@@ -35,9 +35,9 @@ As principais etapas envolvidas no uso dos componentes da interface do usuário 
 
 ## 1. Instalar a interface do usuário de material do Google
 
-Por padrão, o kit inicial usa [Adobe Espectro](https://spectrum.adobe.com/) componentes. Vamos configurá-lo para uso [Interface do usuário de material da Google](https://mui.com/):
+Por padrão, o kit inicial usa componentes de [Espectro de Adobe](https://spectrum.adobe.com/). Vamos configurá-lo para usar a [Interface do usuário de material do Google](https://mui.com/):
 
-1. Verifique se o kit inicial não está em execução. Para interromper o kit inicial, abra o terminal, navegue até o **react-starter-kit-aem-headless-forms**, e pressione Ctrl-C (é o mesmo no Windows, Mac e Linux).
+1. Verifique se o kit inicial não está em execução. Para interromper o kit inicial, abra o terminal, navegue até o **react-starter-kit-aem-headless-forms** e pressione Ctrl-C (é o mesmo no Windows, Mac e Linux).
 
    Não tente fechar o terminal. Fechar o terminal não interrompe o kit inicial.
 
@@ -54,24 +54,24 @@ Ele instala as bibliotecas npm da interface do usuário do Google Material e adi
 
 ## 2. Criar componentes personalizados do React
 
-Vamos criar um componente personalizado que substitua o padrão [entrada de texto](https://spectrum.adobe.com/page/text-field/) componente com [Campo de texto da interface do usuário de material do Google](https://mui.com/material-ui/react-text-field/) componente.
+Vamos criar um componente personalizado que substitua o componente padrão [entrada de texto](https://spectrum.adobe.com/page/text-field/) pelo componente [Campo de texto da interface do usuário de material do Google](https://mui.com/material-ui/react-text-field/).
 
-É necessário um componente separado para cada tipo de componente ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) ou :type) usada em uma definição de Formulário Headless. Por exemplo, no formulário Fale Conosco criado na seção anterior, os campos Nome, Email e Telefone do tipo `text-input` ([fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def)) e o campo de mensagem for do tipo `multiline-input` ([&quot;fieldType&quot;: &quot;multiline-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/reference-json-properties-fieldtype--multiline-input)).
-
-
-Vamos criar um componente personalizado para sobrepor todos os campos de formulário que usam [fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) propriedade com [Campo de texto da interface do usuário de material](https://mui.com/material-ui/react-text-field/) componente.
+É necessário um componente separado para cada tipo de componente ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) ou :type) usado em uma definição de Formulário Headless. Por exemplo, no formulário Fale Conosco criado na seção anterior, os campos Nome, Email e Telefone do tipo `text-input` ([fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def)) e o campo de mensagem é do tipo `multiline-input` ([&quot;fieldType&quot;: &quot;multiline-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/reference-json-properties-fieldtype--multiline-input)).
 
 
-Para criar o componente personalizado e mapeá-lo com a tag [fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) propriedade:
-
-1. Abra o **react-starter-kit-aem-headless-forms** em um editor de código e navegue até `\react-starter-kit-aem-headless-forms\src\components`.
+Vamos criar um componente personalizado para sobrepor todos os campos de formulário que usam a propriedade [fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) com o componente [Campo de texto da interface do usuário do material](https://mui.com/material-ui/react-text-field/).
 
 
-1. Crie uma cópia do **controle deslizante** ou **richtext** e renomeie a pasta copiada para **materialtextfield**. O controle deslizante e o richtext são dois componentes personalizados de amostra disponíveis no aplicativo inicial. Você pode usá-los para criar seus próprios componentes personalizados.
+Para criar o componente personalizado e mapear o componente personalizado com a propriedade [fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) :
 
-   ![O componente personalizado materialtextfield no VSCode](/help/assets/richtext-custom-component-in-vscode.png)
+1. Abra o diretório **react-starter-kit-aem-headless-forms** em um editor de código e navegue até `\react-starter-kit-aem-headless-forms\src\components`.
 
-1. Abra o `\react-starter-kit-aem-headless-forms\src\components\materialtextfield\index.tsx` e substitua o código existente pelo código abaixo. Esse código retorna e renderiza um [Campo de texto da interface do usuário de material do Google](https://mui.com/material-ui/react-text-field/) componente.
+
+1. Crie uma cópia da pasta **slider** ou **richtext** e renomeie a pasta copiada como **materialtextfield**. O controle deslizante e o richtext são dois componentes personalizados de amostra disponíveis no aplicativo inicial. Você pode usá-los para criar seus próprios componentes personalizados.
+
+   ![O componente personalizado materialtextfield em VSCode](/help/assets/richtext-custom-component-in-vscode.png)
+
+1. Abra o arquivo `\react-starter-kit-aem-headless-forms\src\components\materialtextfield\index.tsx` e substitua o código existente pelo código abaixo. Este código retorna e renderiza um componente [Campo de texto da interface do usuário do material do Google](https://mui.com/material-ui/react-text-field/).
 
 ```JavaScript
  
@@ -102,24 +102,24 @@ Para criar o componente personalizado e mapeá-lo com a tag [fieldType](https://
 ```
 
 
-A variável `state.visible` A peça verifica se o componente está definido para ficar visível. Se for, o rótulo do campo será recuperado e exibido usando `richTextString(state?.label?.value)`.
+A parte `state.visible` verifica se o componente está definido para ser visível. Se for, o rótulo do campo será recuperado e exibido usando `richTextString(state?.label?.value)`.
 
 ![](/help/assets/material-text-field.png)
 
 
-Seu componente personalizado `materialtextfield` está pronto. Vamos definir este componente personalizado para substituir todas as instâncias de  [fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) com o Campo de texto da interface do usuário de material do Google.
+Seu componente personalizado `materialtextfield` está pronto. Vamos definir este componente personalizado para substituir todas as instâncias de [fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) com o Campo de texto da interface do usuário de material do Google.
 
 ## 3. Mapear componente personalizado com campos de formulário headless
 
-O processo de usar componentes de biblioteca de terceiros para renderizar campos de formulário é conhecido como mapeamento. Você mapeia cada um ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input)) ao componente correspondente da biblioteca de terceiros.
+O processo de usar componentes de biblioteca de terceiros para renderizar campos de formulário é conhecido como mapeamento. Você mapeia cada ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input)) para o componente correspondente da biblioteca de terceiros.
 
-Todas as informações relacionadas ao mapeamento são adicionadas à `mappings.ts` arquivo. A variável `...mappings` na instrução `mappings.ts` arquivo refere-se aos mapeamentos padrão, que sobrepõem o ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) ou :type) com [Espectro de Adobe](https://spectrum.adobe.com/page/text-field/) componentes.
+Todas as informações relacionadas ao mapeamento são adicionadas ao arquivo `mappings.ts`. A instrução `...mappings` no arquivo `mappings.ts` se refere aos mapeamentos padrão, que sobrepõem o ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) ou :type) com componentes [Adobe Spectrum](https://spectrum.adobe.com/page/text-field/).
 
-Para adicionar mapeamento para o  `materialtextfield` criado na última etapa:
+Para adicionar mapeamento para o componente `materialtextfield`, criado na última etapa:
 
-1. Abra o `mappings.ts` arquivo.
+1. Abra o arquivo `mappings.ts`.
 
-1. Adicione a seguinte declaração de importação para incluir a `materialtextfield` componente para a `mappings.ts` arquivo:
+1. Adicione a seguinte instrução de importação para incluir o componente `materialtextfield` no arquivo `mappings.ts`:
 
 
    ```JavaScript
@@ -147,7 +147,7 @@ Para adicionar mapeamento para o  `materialtextfield` criado na última etapa:
         export default customMappings;
    ```
 
-1. Salve e execute o aplicativo. Os três primeiros campos do formulário são renderizados usando [Campo de texto da interface do usuário de material do Google](https://mui.com/material-ui/react-text-field/):
+1. Salve e execute o aplicativo. Os três primeiros campos do formulário são renderizados usando o [Campo de Texto da Interface do Usuário do Material do Google](https://mui.com/material-ui/react-text-field/):
 
    ![](assets/material-text-field-form-rendetion.png)
 

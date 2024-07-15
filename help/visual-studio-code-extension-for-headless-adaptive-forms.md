@@ -11,7 +11,7 @@ hide: false
 exl-id: 11960e91-6c09-48d4-9d57-37537f808cd4
 source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
@@ -35,12 +35,12 @@ Adobe provides an extension for Microsoft&reg; Visual Studio Code to make it eas
 
 ## Pré-requisitos
 
-* Baixar e instalar [Microsoft Visual Studio Code 1.62.0 ou posterior](https://code.visualstudio.com/docs/supporting/FAQ#_how-do-i-find-the-version). Se você tiver uma versão mais antiga ou nenhuma versão instalada, baixe a versão mais recente em [Site da Microsoft](https://code.visualstudio.com/docs/setup/setup-overview). Para usar o Visual Studio na linha de comando do Apple macOS, consulte [Iniciando a partir da linha de comando](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line).
-* Baixe o [Extensão adaptável do construtor de formulários](/help/assets/adaptive-form-builder-0.12.0.vsix).
+* Baixe e instale o [Microsoft Visual Studio Code 1.62.0 ou posterior](https://code.visualstudio.com/docs/supporting/FAQ#_how-do-i-find-the-version). Se você tiver uma versão mais antiga ou nenhuma versão instalada, baixe a versão mais recente do [site da Microsoft](https://code.visualstudio.com/docs/setup/setup-overview). Para usar o Visual Studio a partir da linha de comando no Apple macOS, consulte [Inicialização a partir da linha de comando](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line).
+* Baixe a [extensão do construtor de formulários adaptáveis](/help/assets/adaptive-form-builder-0.12.0.vsix).
 
 ## Instalar a extensão
 
-1. Abra o prompt de comando e navegue até o diretório que contém o arquivo de extensão baixado, *construtor de formulários adaptáveis-[version].vsix*.
+1. Abra o prompt de comando e navegue até o diretório que contém o arquivo de extensão baixado, *adaptive-form-builder-[version].vsix*.
 
 1. Execute o seguinte comando para instalar a extensão:
 
@@ -51,4 +51,4 @@ Adobe provides an extension for Microsoft&reg; Visual Studio Code to make it eas
    ![Instalando extensão](/help/assets/install-extension.png)
 
 
-   Para obter informações sobre arquivos .vsix, consulte [Ajuda do Microsoft Visual Studio Code](https://code.visualstudio.com/docs/editor/extension-marketplace#_install-from-a-vsix).
+   Para obter informações sobre arquivos .vsix, consulte a [Ajuda do Microsoft Visual Studio Code](https://code.visualstudio.com/docs/editor/extension-marketplace#_install-from-a-vsix).

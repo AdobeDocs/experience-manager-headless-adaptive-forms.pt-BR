@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Desenvolvimento de formulários headless usando seus próprios componentes {#developing-for-headless-forms-using-your-own-components}
 
-<span class="preview"> Este é um **TRABALHO EM ANDAMENTO** artigo.</span>
+<span class="preview"> Este é um artigo **TRABALHO EM ANDAMENTO**.</span>

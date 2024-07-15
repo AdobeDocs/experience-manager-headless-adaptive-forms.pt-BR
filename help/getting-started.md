@@ -31,4 +31,4 @@ A fim de melhorar a eficiência e a flexibilidade do processo de solicitação d
 
 A forma mais popular entre os turistas é o formulário &quot;Contate-nos&quot;, que é usado para fazer várias perguntas e perguntas. Assim, o departamento de relações exteriores optou por começar a implementar a abordagem de formulários adaptáveis headless com este formulário. Este tutorial guiará você pelo processo de criação do formulário Fale Conosco usando esta nova arquitetura. O resultado final terá esta aparência:
 
-![Entre em contato com o formulário adaptável headless dos EUA](assets/contact-us-headless-adaptive-forms.png)
+![Contate-nos pelo formulário adaptável headless](assets/contact-us-headless-adaptive-forms.png)

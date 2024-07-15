@@ -32,13 +32,13 @@ Como usar o AEM Forms para criar adaptive forms de forma fácil, utilizando os c
 
 Para usar estas mãos no laboratório:
 
-* Instale o [última versão do Git](https://git-scm.com/downloads). Se você é novo no Git, consulte [Instalação do Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+* Instale a [última versão do Git](https://git-scm.com/downloads). Se você é novo no Git, consulte [Instalando o Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-* Instalar [Node.js 16.13.0 ou posterior](https://nodejs.org/en/download/). Se você é novo no Node.js, consulte [Como instalar o Node.js](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs).
+* Instale o [Node.js 16.13.0 ou posterior](https://nodejs.org/en/download/). Se você é novo no Node.js, consulte [Como instalar o Node.js](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs).
 
-* [Ativar os Componentes principais adaptáveis do Forms](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md) para seu ambiente as a Cloud Service do AEM Forms.
+* [Habilite os Componentes principais adaptáveis do Forms](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md) para o seu ambiente as a Cloud Service AEM Forms.
 
-* Instalar [Código do Microsoft Visual Studio](https://code.visualstudio.com/download) ou qualquer editor de texto simples. Os exemplos no documento usam o Microsoft Visual Studio Code.
+* Instale o [Microsoft Visual Studio Code](https://code.visualstudio.com/download) ou qualquer editor de texto simples. Os exemplos no documento usam o Microsoft Visual Studio Code.
 
 
 
@@ -60,7 +60,7 @@ Nesta lição, você poderá se familiarizar com o AEM Forms as a Cloud Service 
 1. Faça logon no ambiente de autor do Cloud Service.
    ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
 
-1. Para navegar até a interface do AEM Forms, clique em **Forms > Forms e documentos**.
+1. Para navegar até a interface do usuário do AEM Forms, clique em **Forms > Forms e Documentos**.
 
 
 
@@ -103,12 +103,12 @@ Nesta lição, você atuará como um usuário empresarial e criará um adaptive 
    1. Clique na guia **Estilo** e selecione o tema **wknd-theme**, conforme mostrado abaixo:
       ![](/help/assets/screenshot202023-03-0120at206.09.2320pm.png)
 
-   1. Clique em **Envio** e selecione a guia **Enviar para ponto de extremidade REST** e especifique o compartimento público no **URL da solicitação POST** conforme mostrado abaixo:
+   1. Clique na guia **Envio**, selecione o cartão **Enviar para o ponto de extremidade REST** e especifique o compartimento público no campo **URL da solicitação POST**, conforme mostrado abaixo:
       ![](/help/assets/screenshot202023-03-0120at206.09.5320pm.png)
 
    1. Clique em **Criar**. Especifique um nome e um título para o formulário. Por exemplo, **registro**. Clique em **Criar**.
 
-   1. O editor de formulário adaptável é aberto. Ignore quaisquer pop-ups ou caixas de diálogo de preferências ou informações. Clique no navegador de componentes no painel à esquerda e adicione o **Cabeçalho** e **Rodapé** componentes respectivamente na parte superior e inferior do formulário em branco.
+   1. O editor de formulário adaptável é aberto. Ignore quaisquer pop-ups ou caixas de diálogo de preferências ou informações. Clique no navegador de componentes no painel à esquerda e adicione os componentes **Cabeçalho** e **Rodapé** respectivamente à parte superior e inferior do formulário em branco.
       ![](/help/assets/screenshot2028121929.png)
 
    1. Arraste e solte componentes do navegador Componentes para criar um formulário, semelhante ao seguinte:
@@ -138,13 +138,13 @@ Nesta lição, você atuará como um usuário empresarial e criará um adaptive 
 
 1. Adicionar interatividade ao formulário com regras:
 
-   1. Clique em **Marque a caixa para receber 5% de desconto** componente. Na barra de ferramentas de opções, clique no ícone Regras. A opção Editor de regras é aberta.
+   1. Clique no **Marque a caixa para receber o componente com 5% de desconto**. Na barra de ferramentas de opções, clique no ícone Regras. A opção Editor de regras é aberta.
 
-   1. Criar uma regra, quando a variável **Marque a caixa para receber 5% de desconto** for selecionada, as opções para aplicar cartão de crédito serão desativadas.
+   1. Criar uma regra, quando a opção **Marcar a caixa para receber 5% de desconto** estiver selecionada, as opções para aplicar cartão de crédito serão desabilitadas.
 
-1. Publique o formulário.
+1. Publish o formulário.
 
-   1. Abra a interface de gerenciamento do AEM Forms, por exemplo, `https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments`e selecione o formulário.
+   1. Abra a interface de gerenciamento do AEM Forms, por exemplo, `https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments`, e selecione o formulário.
 
    1. Clique em **Publicar**.
 
@@ -237,7 +237,7 @@ Configure o repositório local do tema:
 
    >[!NOTE]
    >
-   > * Se você receber uma mensagem solicitando a atualização do npm por meio do `npm notice Run npm nstall -g npm@9.6.0` ignorar a mensagem.
+   > * Se você receber uma mensagem solicitando a atualização do npm por meio do comando `npm notice Run npm nstall -g npm@9.6.0`, ignore a mensagem.
    > * Não execute outros comandos de npm, a menos que seja instruído na pasta de trabalho.
 
 1. Em seguida, execute o seguinte comando para visualizar o formulário.
@@ -248,9 +248,9 @@ Configure o repositório local do tema:
 
    ![](/help/assets/screenshot2028117229.png)
 
-   Depois que o comando acima for executado, aguarde o `webpack compiled` e você será redirecionado para uma página de logon do AEM.
+   Depois que o comando acima for executado, aguarde a mensagem `webpack compiled` e você será redirecionado para uma página de logon AEM.
 
-1. Clique em **Fazer logon localmente (somente tarefas de administrador)** na página de login do AEM.
+1. Clique em **Fazer logon localmente (somente Tarefas de administrador)** na página de logon do AEM.
 1. Insira as credenciais para o usuário local criado e o formulário será exibido em uma guia do navegador.
 
    >[!NOTE]
@@ -383,7 +383,7 @@ Vamos fazer alterações no formulário no servidor como um usuário empresarial
 
 1. Abra a interface de gerenciamento do AEM Forms no navegador. Por exemplo, [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments).
 
-1. Selecione o **contactus** e clique em **Editar.** Isso abre o formulário no editor de adaptive forms.
+1. Selecione o formulário **contatos** e clique em **Editar.** Isso abre o formulário no editor de adaptive forms.
 
 
 1. Selecione o campo **Número de telefone** e clique no **ícone Editar (ícone de Lápis)** na barra de ferramentas. Se não conseguir visualizar o pop-up da barra de ferramentas, alterne para o modo de edição clicando no botão **Editar** na parte superior direita, à esquerda do botão **Visualizar**.

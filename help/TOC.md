@@ -18,7 +18,7 @@ ht-degree: 4%
 + [Visão geral](overview.md)
 + [Teste de visão geral](overview-testing.md)
 + [Arquitetura](architecture.md)
-+ Configuração rápida {#quick-setup}
++ Instalação rápida {#quick-setup}
    + [Ativar o Forms adaptável headless no AEM 6.5 Forms](enable-headless-adaptive-forms-and-core-components.md)
    + [Ativar o Forms adaptável headless no AEM Forms as a Cloud Service](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md)
 + Tutorial {#tutorial}

@@ -12,47 +12,47 @@ contentOwner: Khushwant Singh
 docset: CloudService
 hide: true
 hidefromtoc: true
-exl-id: 7c545ca6-cb2d-4d28-b9e8-b6efe3faee00
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
+source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 2%
+source-wordcount: '914'
+ht-degree: 0%
 
 ---
 
 # Ativar o Forms adaptável headless no AEM Forms as a Cloud Service {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
-A ativação do headless Adaptive Forms no AEM Forms as a Cloud Service permite começar a criar, publicar e fornecer Forms headless usando as instâncias do AEM Forms Cloud Service para vários canais. Você precisa do ambiente habilitado dos Componentes principais adaptáveis do Forms para usar o Forms adaptável headless.
+A habilitação do headless Adaptive Forms no AEM Forms as a Cloud Service permite começar a criar, publicar e fornecer Forms headless usando as instâncias do AEM Forms Cloud Service para vários canais. Você precisa do ambiente habilitado dos Componentes principais adaptáveis do Forms para usar o Forms adaptável headless.
 
 ## Considerações
 
-* Ao criar um novo programa AEM Forms as a Cloud Service, [O headless Adaptive Forms já está ativado para seus ambientes](#are-adaptive-forms-core-components-enabled-for-my-environment).
+* Ao criar um novo programa AEM Forms as a Cloud Service, o [Headless Adaptive Forms já está habilitado para os seus ambientes](#are-adaptive-forms-core-components-enabled-for-my-environment).
 
-* Se você tiver um programa as a Cloud Service mais antigo do Forms, em que os Componentes principais estão [não ativado](#enable-components), você pode [adicionar dependências dos Componentes principais do Forms adaptável](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) no repositório do AEM as a Cloud Service e implante o repositório nos ambientes Cloud Service para ativar o Forms adaptável headless.
+* Se você tiver um programa mais antigo de as a Cloud Service do Forms em que os Componentes principais [não estão habilitados](#enable-components), poderá [adicionar dependências dos Componentes principais do Adaptive Forms](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) ao seu repositório do AEM as a Cloud Service e implantar o repositório nos seus ambientes de Cloud Service para habilitar o Adaptive Forms Headless.
 
-* Se o ambiente de Cloud Service existente fornecer a opção de [criar Forms adaptável com base em Componentes principais](create-a-headless-adaptive-form.md), o Headless Adaptive Forms já estão habilitados para o seu ambiente e você pode fornecer formulários adaptáveis baseados no componente principal do Adaptive Forms como formulários headless para canais como dispositivos móveis, Web, aplicativos nativos e serviços que exigem uma representação headless do Adaptive Forms.
+* Se seu ambiente de Cloud Service existente fornecer a opção de [criar Forms adaptável baseado em Componentes principais](create-a-headless-adaptive-form.md), o Forms adaptável headless já estará habilitado para seu ambiente e você poderá fornecer Forms adaptável baseado em Componentes principais como formulários headless para canais como dispositivos móveis, Web, aplicativos nativos e serviços que exigem uma representação headless do Forms adaptável.
 
 
 >[!NOTE]
 >
 >
-> Adobe fornece Forms adaptável [kit inicial (React App)](create-and-publish-a-headless-form.md) para ajudar os desenvolvedores a começar rapidamente com o desenvolvimento headless adaptável do Forms, sem ativar o ambiente headless adaptável do Forms no AEM Forms as a Cloud Service. Você pode ativar o Forms adaptável headless em um ambiente as a Cloud Service do Forms posteriormente após um [práticas rápidas com o desenvolvimento de formulários headless](create-and-publish-a-headless-form.md).
+> O Adobe fornece o [kit inicial (Aplicativo React)](create-and-publish-a-headless-form.md) do Adaptive Forms para ajudar os desenvolvedores a iniciar rapidamente o desenvolvimento do Forms Adaptive Headless, sem ativar o ambiente as a Cloud Service do Headless Adaptive Forms no AEM Forms. Você pode habilitar a Forms adaptável headless em um ambiente as a Cloud Service Forms posteriormente após uma [rápida interação com o desenvolvimento de formulários headless](create-and-publish-a-headless-form.md).
 
-## Ativar o Forms adaptável headless para um ambiente as a Cloud Service do AEM Forms
+## Ativar o Forms adaptável headless para um ambiente as a Cloud Service AEM Forms
 
-Execute as seguintes etapas, na ordem listada, para ativar o Headless Adaptive Forms para um ambiente as a Cloud Service do AEM Forms
+Execute as seguintes etapas, na ordem listada, para ativar o Forms adaptável headless para um ambiente as a Cloud Service AEM Forms
 
 
 ![](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 
-## 1. Clonar o repositório Git as a Cloud Service do AEM Forms {#clone-git-repository}
+## 1. Clonar o repositório as a Cloud Service do AEM Forms {#clone-git-repository}
 
-1. Efetue logon no [Cloud Manager](https://my.cloudmanager.adobe.com/) e selecione sua organização e programa.
+1. Faça logon no [Cloud Manager](https://my.cloudmanager.adobe.com/) e selecione sua organização e programa.
 
-1. Navegue até a **Pipelines** do seu **Visão geral do programa** clique no link **Acessar informações do repositório** botão para acessar e gerenciar o Repositório Git. A página inclui as seguintes informações:
+1. Navegue até o cartão **Pipelines** na página **Visão geral do programa**, clique no botão **Acessar informações do repositório** para acessar e gerenciar o Repositório Git. A página inclui as seguintes informações:
 
-   * URL do Repositório Git do Cloud Manager.
+   * URL do Repositório Git da Cloud Manager.
    * Credenciais do nome de usuário do Git do Repositório Git (nome de usuário e senha).
 
    Clique em **Gerar senha** para exibir ou gerar a senha.
@@ -69,8 +69,8 @@ Execute as seguintes etapas, na ordem listada, para ativar o Headless Adaptive F
 ## 2. Adicione as dependências dos Componentes principais do Forms adaptável ao Repositório Git {#add-adaptive-forms-core-components-dependencies}
 
 1. Abra a pasta Repositório Git em um editor de código de texto simples. Por exemplo, Código VS.
-1. Abra o `[AEM Repository Folder]\pom.xml` arquivo para edição.
-1. Substituir versões do `core.forms.components.version`, `core.forms.components.af.version` e `core.wcm.components.version` componentes com versões especificadas em [documentação dos Componentes principais](https://github.com/adobe/aem-core-forms-components). Se o componente não existir, adicione esses componentes.
+1. Abra o arquivo `[AEM Repository Folder]\pom.xml` para edição.
+1. Substitua as versões dos componentes `core.forms.components.version`, `core.forms.components.af.version` e `core.wcm.components.version` pelas versões especificadas na [documentação dos componentes principais](https://github.com/adobe/aem-core-forms-components). Se o componente não existir, adicione esses componentes.
 
    ```XML
    <!-- Replace the version with the latest released version at https://github.com/adobe/aem-core-forms-components/tags -->
@@ -84,7 +84,7 @@ Execute as seguintes etapas, na ordem listada, para ativar o Headless Adaptive F
 
    ![Mencione a versão mais recente dos Componentes principais do Forms](/help/assets/latest-forms-component-version.png)
 
-1. Na seção de dependências do `[AEM Repository Folder]\pom.xml` adicione as seguintes dependências e salve o arquivo.
+1. Na seção de dependências do arquivo `[AEM Repository Folder]\pom.xml`, adicione as seguintes dependências e salve o arquivo.
 
    ```XML
        <!-- WCM Core Component Examples Dependencies -->
@@ -145,7 +145,7 @@ Execute as seguintes etapas, na ordem listada, para ativar o Headless Adaptive F
    <!-- End of AEM Forms Core Component Dependencies -->
    ```
 
-1. Abra o `[AEM Repository Folder]/all/pom.xml` arquivo para edição. Adicione as seguintes dependências no `<embeddeds>` e salve o arquivo.
+1. Abra o arquivo `[AEM Repository Folder]/all/pom.xml` para edição. Adicione as seguintes dependências na seção `<embeddeds>` e salve o arquivo.
 
    ```XML
    <!-- WCM Core Component Examples Dependencies -->
@@ -200,9 +200,9 @@ Execute as seguintes etapas, na ordem listada, para ativar o Headless Adaptive F
    >[!NOTE]
    >
    >
-   >  Substituir `${appId}` com sua appId.
+   >  Substitua `${appId}` com sua appId.
    >
-   >  Para encontrar o `${appId}`, no `[AEM Repository Folder]/all/pom.xml` arquivo, pesquise o `-packages/application/install` termo. O texto antes da `-packages/application/install` o termo é seu `${appId}`. Por exemplo, o código a seguir, `myheadlessform` é `${appId}`.
+   >  Para encontrar seu `${appId}`, no arquivo `[AEM Repository Folder]/all/pom.xml`, pesquise o termo `-packages/application/install`. O texto antes do termo `-packages/application/install` é o seu `${appId}`. Por exemplo, o código a seguir, `myheadlessform` é `${appId}`.
    >
    >   ```
    >             <embedded>
@@ -213,7 +213,7 @@ Execute as seguintes etapas, na ordem listada, para ativar o Headless Adaptive F
    >             </embedded>
    >   ```
 
-1. No `<dependencies>` seção do `[AEM Repository Folder]/all/pom.xml` adicione as seguintes dependências e salve o arquivo:
+1. Na seção `<dependencies>` do arquivo `[AEM Repository Folder]/all/pom.xml`, adicione as seguintes dependências e salve o arquivo:
 
    ```XML
            <!-- Other existing dependencies -->
@@ -251,7 +251,7 @@ Execute as seguintes etapas, na ordem listada, para ativar o Headless Adaptive F
            </dependency>
    ```
 
-1. Abra o `[AEM Repository Folder]/ui.apps/pom.xml` para edição. Adicione o `af-core bundle` e salve o arquivo.
+1. Abra o `[AEM Repository Folder]/ui.apps/pom.xml` para edição. Adicione a dependência `af-core bundle` e salve o arquivo.
 
    ```XML
        <dependency>
@@ -285,7 +285,7 @@ Execute as seguintes etapas, na ordem listada, para ativar o Headless Adaptive F
 
 ## 3. Atualize o projeto para incluir a versão mais recente dos Componentes principais do Forms:
 
-1. Abra o [Pasta de projeto do arquétipo AEM]/pom.xml para edição.
+1. Abra a [Pasta do Projeto do Arquétipo AEM]/pom.xml para edição.
 
 
 1. Salvar e fechar o arquivo.
@@ -294,7 +294,7 @@ Execute as seguintes etapas, na ordem listada, para ativar o Headless Adaptive F
 
 1. Para confirmar o código no Repositório Git:
    1. Abra o terminal ou o prompt de comando.
-   1. Navegue até o `[AEM Repository Folder]` e execute os seguintes comandos na ordem listada
+   1. Navegue até `[AEM Repository Folder]` e execute os seguintes comandos na ordem listada
 
       ```Shell
       git add pom.xml
@@ -304,16 +304,16 @@ Execute as seguintes etapas, na ordem listada, para ativar o Headless Adaptive F
       git push origin
       ```
 
-1. Depois que os arquivos forem confirmados no Repositório Git, [Executar o pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=pt-BR).
+1. Depois que os arquivos forem confirmados no Repositório Git, [Execute o pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=pt-BR).
 
-   Depois que a execução do pipeline for bem-sucedida, os Componentes principais adaptáveis do Forms serão ativados para o ambiente correspondente. Além disso, um modelo de Forms adaptável (Componentes principais) e o tema do Canvas 3.0 são adicionados ao ambiente as a Cloud Service do Forms, fornecendo opções para personalizar e criar Componentes principais com base no Forms adaptável.
+   Depois que a execução do pipeline for bem-sucedida, os Componentes principais adaptáveis do Forms serão ativados para o ambiente correspondente. Além disso, um modelo de Forms adaptável (Componentes principais) e o tema do Canvas 3.0 são adicionados ao seu ambiente as a Cloud Service do Forms, fornecendo opções para personalizar e criar Componentes principais com base no Forms adaptável.
 
 
 ## Perguntas frequentes {#faq}
 
 ### Quais são os componentes principais? {#core-components}
 
-A variável [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) são um conjunto de componentes padronizados de Gerenciamento de Conteúdo na Web (WCM, na sigla em inglês) para o AEM a fim de acelerar o tempo de desenvolvimento e reduzir o custo de manutenção de seus sites.
+Os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) são um conjunto de componentes padronizados de Gerenciamento de Conteúdo na Web (WCM) para o AEM, a fim de acelerar o tempo de desenvolvimento e reduzir o custo de manutenção de seus sites.
 
 ### Quais são todos os recursos adicionados na ativação dos componentes principais? {#core-components-capabilities}
 
@@ -330,7 +330,7 @@ Para verificar se os Componentes principais do Adaptive Forms estão ativados pa
 
 1. [Clonar o repositório as a Cloud Service do AEM Forms](#1-clone-your-aem-forms-as-a-cloud-service-git-repository).
 
-1. Abra o `[AEM Repository Folder]/all/pom.xml` arquivo do Repositório Git do AEM Forms Cloud Service.
+1. Abra o arquivo `[AEM Repository Folder]/all/pom.xml` do Repositório Git do AEM Forms Cloud Service.
 
 1. Procure as seguintes dependências:
 

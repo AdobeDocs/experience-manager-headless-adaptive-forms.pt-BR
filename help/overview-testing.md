@@ -28,7 +28,7 @@ Os formulários adaptáveis headless ajudam a:
 * criar formulários multicanal de alta qualidade na linguagem de programação de sua escolha
 * integrar formulários nativamente a seus aplicativos móveis e de desktop, sites e aplicativos de bate-papo
 * reutilizar os componentes de interface de sua propriedade com aplicativos de formulários
-* aproveitar o [poder do Adobe Experience Manager Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html)
+* aproveitar a [potência do Adobe Experience Manager Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html)
 
 Além disso, você tem a liberdade de desenvolver seus próprios componentes para renderizar um formulário usando qualquer estrutura de interface do usuário e linguagem de programação de sua escolha. Você também pode usar os componentes do React disponíveis prontos para uso para renderizar um formulário adaptável headless.
 
@@ -183,7 +183,7 @@ Além disso, você tem a liberdade de desenvolver seus próprios componentes par
 
 ## Quem pode usar formulários adaptáveis headless? {#who-can-use-headless-adaptive-forms}
 
-Qualquer desenvolvedor de front-end familiarizado com estruturas JavaScript modernas pode usar formulários adaptáveis headless. Os desenvolvedores podem aproveitar sua experiência existente em idiomas de front-end, como o React, para criar belas experiências de captura de dados de nível empresarial.
+Qualquer desenvolvedor front-end familiarizado com as estruturas modernas do JavaScript pode usar formulários adaptáveis headless. Os desenvolvedores podem aproveitar sua experiência existente em idiomas de front-end, como o React, para criar belas experiências de captura de dados de nível empresarial.
 
 Você não precisa de conhecimento prévio do Adobe Experience Manager para desenvolver formulários adaptáveis headless.
 

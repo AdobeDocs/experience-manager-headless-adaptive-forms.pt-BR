@@ -10,15 +10,15 @@ role: Admin, Developer
 level: Beginner, Intermediate
 topic-tags: develop
 hide: true
-exl-id: 46df943c-0622-4b3b-a802-85c39ac6a734
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
+source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 62%
+source-wordcount: '2130'
+ht-degree: 58%
 
 ---
 
-# Crie formulários envolventes usando componentes principais e a tecnologia headless Forms adaptável no AEM 6.5 Forms {#build-engaging-forms-using-core-components-and-headless}
+# Criar Forms envolvente usando componentes principais e Forms adaptável headless no AEM 6.5 Forms {#build-engaging-forms-using-core-components-and-headless}
 
 ## Visão geral do laboratório {#lab-overview}
 
@@ -34,17 +34,17 @@ Como usar o AEM Forms para criar facilmente o Adaptive Forms usando os Component
 
 * **Velocidade do desenvolvedor**: como desenvolvedor, posso personalizar os componentes do Sites e formulários de forma fácil e consistente.
 
-## Antes de você iniciar {#pre-requisites}
+## Antes de começar {#pre-requisites}
 
 Para usar estas mãos no laboratório:
 
-* Instale o [última versão do Git](https://git-scm.com/downloads). Se você é novo no Git, consulte [Instalação do Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+* Instale a [última versão do Git](https://git-scm.com/downloads). Se você é novo no Git, consulte [Instalando o Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-* Instalar [Node.js 16.13.0 ou posterior](https://nodejs.org/en/download/). Se você é novo no Node.js, consulte [Como instalar o Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
+* Instale o [Node.js 16.13.0 ou posterior](https://nodejs.org/en/download/). Se você é novo no Node.js, consulte [Como instalar o Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
 
-* [Ativar o Forms adaptável headless](enable-headless-adaptive-forms-and-core-components.md) no ambiente AEM 6.5 Forms.
+* [Habilite o Forms Adaptável Headless](enable-headless-adaptive-forms-and-core-components.md) no ambiente do AEM 6.5 Forms.
 
-* Instalar [Código do Microsoft Visual Studio](https://code.visualstudio.com/download) ou qualquer editor de texto simples. Os exemplos no documento usam o Microsoft Visual Studio Code.
+* Instale o [Microsoft Visual Studio Code](https://code.visualstudio.com/download) ou qualquer editor de texto simples. Os exemplos no documento usam o Microsoft Visual Studio Code.
 
 ## Lição 1 {#lesson-1}
 
@@ -58,7 +58,7 @@ Nesta lição, você se familiariza com o AEM 6.5 Forms navegando na interface d
 
 ### Exercício {#lesson-1-excercise}
 
-1. Abra o navegador e insira a URL do ambiente de autor do Por exemplo:
+1. Abra o navegador e insira o URL do ambiente do autor. Por exemplo:
    [https://localhost:4502](https://localhost:4502).
 
 1. Após fazer o logon, acesse a interface do AEM Forms. Clique em **Formulários**.
@@ -97,20 +97,20 @@ Nesta lição, como usuário empresarial, você cria um Formulário adaptável p
 
 1. Criar um formulário adaptável:
 
-   1. Na guia do navegador usada na Lição 1, navegue até a interface da Web do AEM Forms e acesse **Forms** > **Forms e documentos**.
+   1. Na guia do navegador usada na Lição 1, navegue até a interface da Web do AEM Forms e navegue até **Forms** > **Forms e Documentos**.
 
    1. Clique em **Criar** e selecione Formulário adaptável.
       ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
 
-   1. Selecione o **Em branco com Componentes principais** modelo na tela de seleção de modelo como mostrado abaixo e clique em **Próxima**.
+   1. Selecione o modelo **Em branco com Componentes Principais** na tela de seleção de modelo como mostrado abaixo e clique em **Avançar**.
       ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
 
-   1. Especificar `Contact us` como o **Título** do formulário. Certifique-se de que o **Nome** do formulário é `contact-us`.
+   1. Especifique `Contact us` como o **Título** do formulário. Verifique se o **Nome** do formulário é `contact-us`.
       ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
 
    1. Clique em **Criar**. Uma caixa de diálogo é exibida.
 
-   1. Na caixa de diálogo, clique em **Editar**. O formulário é aberto no editor de Formulário adaptável. Ignore quaisquer pop-ups ou caixas de diálogo de preferências ou informações.
+   1. Na caixa de diálogo, clique em **Editar**. O formulário é aberto no editor de Formulário adaptável. Ignore pop-ups ou caixas de diálogo para preferências ou informações.
 
    1. Abra o navegador Componentes e arraste e solte o componente Painel no meio da tela.
 
@@ -121,15 +121,15 @@ Nesta lição, como usuário empresarial, você cria um Formulário adaptável p
       ![](/help/assets/contact-us-headless-adaptive-form.png){width="50%" align="left"}
 
 
-   1. Abra o Navegador de conteúdo, clique em Guia Propriedades do contêiner e abra o **Envio** guia. Selecione o **Enviar para endpoint REST** Ação de envio, selecione o **Habilitar solicitação POST** e especifique o endpoint REST criado na lição 2 na variável **URL da solicitação POST** e clique no botão **Concluído** ícone.
+   1. Abra o Navegador de Conteúdo, clique no ícone de propriedades do Contêiner do Guia e abra a guia **Envio**. Selecione a opção Enviar **Enviar para o endpoint REST**, selecione a opção **Habilitar solicitação de POST** e especifique o endpoint REST criado na lição 2 na caixa de texto **URL para solicitação de POST** e clique no ícone **Concluído**.
 
       ![](/help/assets/configure-submit-action.png){width="50%" align="left"}
 
-1. Publicar um formulário adaptável:
+1. Publish e formulário adaptável:
 
-   1. Abra a interface do AEM, acesse **Forms** > **Forms e documentos**. Selecione o formulário criado na etapa anterior e clique em **Publish**.
+   1. Abra a interface do AEM, navegue até **Forms** > **Forms e Documentos**. Selecione o formulário criado na etapa anterior e clique em **Publish**.
 
-   1. Na caixa de diálogo Publicar ativos, clique em **Publish**. A mensagem de sucesso é exibida.
+   1. Na caixa de diálogo do Publish Assets, clique em **Publish**. A mensagem de sucesso é exibida.
 
 ## Lição 3
 
@@ -149,13 +149,13 @@ Configure o repositório local do tema:
 
    ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
 
-1. No Prompt de Comando, use o seguinte comando para navegar até `c:\git` pasta.
+1. No Prompt de Comando, use o seguinte comando para navegar até a pasta `c:\git`.
 
    ```Shell
    cd git
    ```
 
-   Se a pasta não existir, use o `md git` para criá-lo.
+   Se a pasta não existir, use o comando `md git` para criá-la.
 
 1. Use o seguinte comando para clonar o código de front-end do tema:
 
@@ -176,7 +176,7 @@ Configure o repositório local do tema:
 
    ![](/help/assets/screenshot2028116229.png){width="50%" align="left"}
 
-1. Renomeie o `env_template` arquivo para .env.  Para renomear o arquivo, clique com o botão direito no arquivo **env_template** e selecione a opção **Renomear**.
+1. Renomeie o arquivo `env_template` como .env.  Para renomear o arquivo, clique com o botão direito no arquivo **env_template** e selecione a opção **Renomear**.
 
    ![](/help/assets/screenshot2028116429.png){width="30%" align="left"}
 
@@ -186,7 +186,7 @@ Configure o repositório local do tema:
 
 1. Defina os seguintes valores para as variáveis no arquivo .env e salve o arquivo:
 
-   * **AEM_URL**: especifique o URL de um **publicar** instância. Por exemplo, `https://localhost:4502/`
+   * **AEM_URL**: especifique a URL de uma instância **publicar**. Por exemplo, `https://localhost:4502/`
 
    * **AEM_ADAPTIVE_FORM**: especifique o nome do formulário. Por exemplo, `contact-us`.
 
@@ -261,7 +261,7 @@ Configure o repositório local usando o projeto inicial do React:
 
    ![](/help/assets/screenshot2028115829.png){width="30%" align="left"}
 
-1. No Prompt de Comando, use o seguinte comando para navegar até `c:\git` pasta.
+1. No Prompt de Comando, use o seguinte comando para navegar até a pasta `c:\git`.
 
    ```Shell
    cd git
@@ -290,7 +290,7 @@ Configure o repositório local usando o projeto inicial do React:
 
    ![](/help/assets/screenshot2028117429.png){width="50%" align="left"}
 
-Para renderizar o formulário hospedado no ambiente de publicação do 
+Para renderizar o formulário hospedado em seu ambiente de publicação:
 
 1. Renomeie o arquivo env_template para .env. Para renomear, clique com o botão direito no arquivo **env_template** e selecione a opção **Renomear**.
 
@@ -300,7 +300,7 @@ Para renderizar o formulário hospedado no ambiente de publicação do
 
 1. Defina os seguintes valores para as variáveis no arquivo .env. Depois de atualizar as variáveis, salve o arquivo.
 
-   * **AEM_URL**: especifica a URL do ambiente de publicação do Por exemplo, `https://localhost:4503/`
+   * **AEM_URL**: especifique a URL do ambiente de publicação. Por exemplo, `https://localhost:4503/`
 
    * **AEM_FORM_PATH**: especifique o caminho do Formulário adaptável criado na lição anterior. Por exemplo, `/content/forms/af/contact-us/`
 
@@ -338,23 +338,23 @@ Vamos fazer alterações no formulário no servidor como um usuário empresarial
 
 1. Abra a interface de gerenciamento do AEM Forms no navegador. Por exemplo, [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 
-1. Selecione o **Entre em contato** e clique em **Editar.** Ele abre o formulário no editor Forms adaptável.
+1. Selecione o formulário **Fale Conosco** e clique em **Editar.** Ele abre o formulário no editor Adaptive Forms.
 
 
-1. Selecione o **Número de contato** e clique no botão **Ícone Editar (ícone de Lápis)** na barra de ferramentas. Se não conseguir visualizar o pop-up da barra de ferramentas, alterne para o modo de edição clicando no botão **Editar** na parte superior direita, à esquerda do botão **Visualizar**.
+1. Selecione o campo **Número do contato** e clique no **ícone Editar (ícone de Lápis)** na barra de ferramentas. Se não conseguir visualizar o pop-up da barra de ferramentas, alterne para o modo de edição clicando no botão **Editar** na parte superior direita, à esquerda do botão **Visualizar**.
 
    ![](/help/assets/change-field-title.png){width="50%" align="left"}
 
-1. Alterar o rótulo para **Número de celular**. Clique em qualquer espaço vazio no formulário e as alterações serão salvas.
+1. Altere o rótulo para **Número de celular**. Clique em qualquer espaço vazio no formulário e as alterações serão salvas.
 
 Vamos publicar o formulário atualizado para propagar as alterações no ambiente de publicação.
 
-1. Na guia AEM Forms management interface, selecione o formulário Fale conosco e clique em **Cancelar publicação**. Se não estiver vendo o botão **Desfazer a publicação**, pule para a etapa 3 para publicar as alterações diretamente.
+1. Na guia da interface de gerenciamento do AEM Forms, selecione o formulário Contate-nos e clique em **Cancelar publicação**. Se não estiver vendo o botão **Desfazer a publicação**, pule para a etapa 3 para publicar as alterações diretamente.
 
 
 1. Clique em **Desfazer a publicação**. Clique em **Fechar** na caixa de diálogo correspondente.
 
-1. Depois que o navegador for atualizado, selecione o formulário Fale conosco e clique em **Publish**.
+1. Depois que o navegador for atualizado, selecione o formulário Contate-nos e clique em **Publish**.
 
 
 1. Clique em **Publicar**. Clique em **Fechar** na caixa de diálogo correspondente.
@@ -387,7 +387,7 @@ Configure o repositório local usando o projeto inicial da interface do Material
 
    ![](/help/assets/screenshot2028115829.png){width="30%" align="left"}
 
-1. No Prompt de Comando, use o seguinte comando para navegar até `c:\git` pasta.
+1. No Prompt de Comando, use o seguinte comando para navegar até a pasta `c:\git`.
 
    ```Shell
    cd git
@@ -419,7 +419,7 @@ Configure o repositório local usando o projeto inicial da interface do Material
 
    ![](/help/assets/screenshot2028126829.png)
 
-Para renderizar o formulário hospedado no ambiente de publicação do 
+Para renderizar o formulário hospedado em seu ambiente de publicação:
 
 1. Renomeie o arquivo **env_template** para **.env**. Para renomear, clique com o botão direito no arquivo **env_template** e selecione **Renomear**.
 
@@ -427,7 +427,7 @@ Para renderizar o formulário hospedado no ambiente de publicação do
 
 1. Defina os seguintes valores para as variáveis no arquivo .env. Depois de atualizar as variáveis, salve o arquivo. Use as teclas **CTRL+S** para salvar o arquivo.
 
-   * **AEM_URL**: especifica a URL do ambiente de publicação do Por exemplo, [https://localhost:4503](https://localhost:4503)
+   * **AEM_URL**: especifique a URL do ambiente de publicação. Por exemplo, [https://localhost:4503](https://localhost:4503)
 
    * **AEM_FORM_PATH**: especifique o caminho do Formulário adaptável criado na lição anterior. Por exemplo, /content/forms/af/contact-us/
 
@@ -448,8 +448,7 @@ Para renderizar o formulário hospedado no ambiente de publicação do
 
    ![](/help/assets/lab65-mui-starter-kit-start.png)
 
-   O comando inicia um servidor de desenvolvimento local e renderiza a definição de formulário obtida do AEM através do método headless usando a biblioteca 
-de front-end da interface do Google Material.
+   O comando inicia um servidor de desenvolvimento local e renderiza a definição do formulário obtido do AEM de forma headless, usando a biblioteca de front-end da interface do usuário de materiais do Google.
 
    >[!NOTE]
    >
@@ -529,12 +528,12 @@ Agora que você aprendeu a criar o Adaptive Forms e a fornecê-los a vários can
 
 ## Recursos
 
-* [Introdução dos Componentes principais do formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br)
+* [Introdução aos Componentes principais do formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-br)
 
 * [Criar formulário adaptável usando os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=pt-br)
 
 * [Atualizar estilo do formulário adaptável baseado em componentes principais](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=pt-br)
 
-* [Forms adaptável headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=pt-br)
+* [Forms Adaptável Headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=pt-br)
 
 * [Uso do kit inicial headless do React](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form.html?lang=pt-br)

@@ -25,7 +25,7 @@ Um formulário adaptável headless é essencialmente uma estrutura JSON (esquema
 
 ## Arquitetura {#architecture}
 
-Uma arquitetura típica de formulários adaptáveis headless constitui um Adobe Experience Manager Forms Server, formulários adaptáveis headless hospedados no Adobe Experience Manager Forms Server e seus aplicativos de front-end (site, aplicativo móvel, aplicativos JavaScript, aplicativos de chat e muito mais) para representações de formulários específicas do canal.
+Uma arquitetura típica de formulários adaptáveis headless constitui um servidor do Adobe Experience Manager Forms, formulários adaptáveis headless hospedados no servidor do Adobe Experience Manager Forms e seus aplicativos de front-end (site, aplicativo móvel, aplicativos do JavaScript, aplicativos de chat e muito mais) para execuções de formulário específicas do canal.
 
 A arquitetura típica de uma implantação de formulários adaptáveis headless é semelhante à seguinte:
 
@@ -50,7 +50,7 @@ A typical Headless adaptive forms architecture constitutes an Adobe Experience M
 
 **Formulários adaptáveis headless**: um formulário adaptável headless é representado como um arquivo .json. A estrutura JSON define componentes, restrições e estrutura de um formulário.
 
-**Aplicativos de front-end**: aplicativos front-end como, SPA (Aplicativos de página única), aplicativos para dispositivos móveis, aplicativos JavaScript, consomem formulários adaptáveis headless (a Representação de formulário JSON) e renderizam o formulário em um cliente. Você pode usar o componente de renderização do React fornecido com formulários adaptáveis headless para renderizar um formulário adaptável ou criar seu próprio componente personalizado para renderizar nativamente formulários adaptáveis headless.
+**Aplicativos front-end**: aplicativos front-end como, SPA (Aplicativos de página única), Aplicativos móveis, Aplicativos JavaScript, consomem formulários adaptáveis headless (a Representação de formulário JSON) e renderizam o formulário em um cliente. Você pode usar o componente de renderização do React fornecido com formulários adaptáveis headless para renderizar um formulário adaptável ou criar seu próprio componente personalizado para renderizar nativamente formulários adaptáveis headless.
 
 <!-- ### Understanding Headless adaptive forms definition -->
 
@@ -58,15 +58,15 @@ A typical Headless adaptive forms architecture constitutes an Adobe Experience M
 
 ### Ferramentas do desenvolvedor
 
-Em um ciclo de desenvolvimento típico, você começa com a criação e a hospedagem de formulários adaptáveis Headless no Adobe Experience Manager Forms Server. Na segunda etapa, mapeie os componentes da interface ou use uma biblioteca pública de componentes da interface do usuário, como a interface do usuário de materiais do Google ou a interface do usuário Chakra, para estilizar os formulários. Na última etapa, você busca e exibe formulários adaptáveis Headless em seu aplicativo (site, aplicativo móvel, aplicativos JavaScript, aplicativos de chat ou muitas outras superfícies).
+Em um ciclo de desenvolvimento típico, você começa com a criação e a hospedagem de formulários adaptáveis Headless no Adobe Experience Manager Forms Server. Na segunda etapa, mapeie os componentes da interface ou use uma biblioteca pública de componentes da interface do usuário, como a interface do usuário de materiais do Google ou a interface do usuário Chakra, para estilizar os formulários. Na última etapa, você busca e exibe formulários adaptáveis Headless em seu aplicativo (site, aplicativo móvel, aplicativos do JavaScript, aplicativos de chat ou muitas outras superfícies).
 
 As ferramentas a seguir ajudam a criar e integrar formulários adaptáveis Headless aos seus aplicativos:
 
-**Forms Web SDK (tempo de execução do lado do cliente)**: o Forms Web SDK é uma biblioteca JavaScript do lado do cliente. Ele permite aplicar validações do lado do cliente em campos de formulário, manter o estado do formulário e fornecer ganchos para conectar o formulário com a camada da interface do usuário ou o componente renderizado de formulários adaptáveis. Ele permite que os clientes validem as restrições aplicadas a vários campos de um formulário e ganchos para conectar a estrutura JSON do formulário à estrutura da interface do usuário. O Forms Web SDK tem os seguintes componentes:
+**Forms Web SDK (Client-Side Runtime)**: o Forms Web SDK é uma biblioteca JavaScript do lado do cliente. Ele permite aplicar validações do lado do cliente em campos de formulário, manter o estado do formulário e fornecer ganchos para conectar o formulário com a camada da interface do usuário ou o componente renderizado de formulários adaptáveis. Ele permite que os clientes validem as restrições aplicadas a vários campos de um formulário e ganchos para conectar a estrutura JSON do formulário à estrutura da interface do usuário. O Forms Web SDK tem os seguintes componentes:
 
-* **Processador de regra de negócios**: o processador de regras de negócios aceita a estrutura JSON de formulários como entrada, gerencia o estado dos campos de formulário, executa regras e manipuladores de eventos presentes no JSON.
-* **Aglutinante de reação**: Fornece ganchos sobre o controlador para adicionar estado aos componentes de formulário. Também é útil no preenchimento prévio de um formulário.
-* **Biblioteca de componentes**: fornece Componentes do espectro do React e usa ganchos no módulo React Binder para adicionar estado a esses componentes.
+* **Processador de regras de negócios**: o processador de regras de negócios aceita a estrutura JSON de formulários como entrada, gerencia o estado dos campos de formulário, executa regras e manipuladores de eventos presentes no JSON.
+* **Associador de reação**: fornece ganchos sobre o controlador para adicionar estado aos Componentes de Formulário. Também é útil no preenchimento prévio de um formulário.
+* **Biblioteca de componentes**: fornece Componentes do Espectro do React e usa ganchos no módulo Binder do React para adicionar estado a esses componentes.
 
 Além de fornecer as APIs para validar as restrições aplicadas a vários campos de um formulário, o Forms Web SDK fornece ganchos para conectar formulários adaptáveis headless à estrutura da interface do usuário. Ele também fornece o Renderizador de reação&#x200B; para formulários adaptáveis headless para ajudar a integrar um formulário adaptável headless ao seu aplicativo. Os seguintes componentes do SDK da Web estão disponíveis:
 
@@ -76,7 +76,7 @@ Além de fornecer as APIs para validar as restrições aplicadas a vários campo
 
 Todos esses componentes estão incluídos no Arquétipo AEM. Quando você cria um projeto AEM Archetype 37 ou posterior para formulários adaptáveis headless, a versão mais recente das bibliotecas listadas acima é incluída no projeto.
 
-**Aplicativo Iniciado**: o Adobe também lançou um aplicativo iniciado para ajudá-lo a começar rapidamente com formulários adaptáveis headless.
+**Aplicativo iniciado**: o Adobe também lançou um aplicativo iniciado para ajudá-lo a iniciar rapidamente com formulários adaptáveis headless.
 
 <!-- **View Library (UI Layer)**: A custom form application built in a front-end language. You can use react, Angular, Flutter, NPM, Vue.js, Ionic, BootStrap, or any other language to built front end. You can also use the Headless adaptive forms Super Component, provided out-of-the-box, inside a react application to render a Headless adaptive form. Headless adaptive forms super component makes use of OOTB react spectrum -based form components to render the Headless adaptive form. 
 
@@ -84,10 +84,10 @@ Core-Components: It enables use to render an Adaptive Form using JSON structure.
 
 **Storybook**: [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) fornece uma visão geral de diferentes componentes de formulários adaptáveis headless. Também fornece uma lista de todos os componentes compatíveis, suas propriedades correspondentes e restrições.
 
-**Extensão de Código do Visual Studio**: [Extensão do Visual Studio Code](visual-studio-code-extension-for-headless-adaptive-forms.md) para ajudar a criar uma estrutura JSON válida. Ele fornece suporte e validação do IntelliSense para a estrutura JSON de formulários, juntamente com funções comuns, como adicionar, excluir ou renomear componentes de uma estrutura JSON.
+**Extensão de Código do Visual Studio**: [Extensão de Código do Visual Studio](visual-studio-code-extension-for-headless-adaptive-forms.md) para ajudar a criar uma estrutura JSON válida. Ele fornece suporte e validação do IntelliSense para a estrutura JSON de formulários, juntamente com funções comuns, como adicionar, excluir ou renomear componentes de uma estrutura JSON.
 
-**Especificações da versão 2.0 do Forms adaptável**: a especificação Adaptive Forms versão 2.0 fornece informações detalhadas sobre todos os componentes, restrições e métodos disponíveis para definir formulários adaptáveis headless. A especificação está disponível em [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf) formato.
+**Especificações da versão 2.0 do Forms adaptável**: a especificação da versão 2.0 do Forms adaptável fornece informações detalhadas sobre todos os componentes, restrições e métodos disponíveis para definir formulários adaptáveis headless. A especificação está disponível no formato [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf).
 
-**APIs HTTP e JavaScript**: [APIs HTTP](https://opensource.adobe.com/aem-forms-af-runtime/api/) permite listar, buscar, validar, enviar e rastrear o status de envio de formulários headless. [APIs JS](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) O ajuda a usar formulários adaptáveis headless com qualquer estrutura de interface do usuário baseada em JavaScript.
+**APIs HTTP e JavaScript**: [APIs HTTP](https://opensource.adobe.com/aem-forms-af-runtime/api/) permitem listar, buscar, validar, enviar e rastrear o status de envio de formulários headless. As [APIs JS](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) ajudam você a usar formulários adaptáveis headless com qualquer estrutura de interface do usuário baseada no JavaScript.
 
-**Fórmula JSON**: é uma implementação da gramática de expressão de formulários para ajudar a consultar a estrutura JSON e criar regras para formulários adaptáveis headless. A gramática é um mashup de funções e operadores semelhantes a planilhas e [JMESPath](https://jmespath.org/) uma linguagem de consulta JSON. Você pode usar o [playground](https://opensource.adobe.com/json-formula/dist/index.html) para explorar a sintaxe e os recursos da fórmula JSON.
+**Fórmula JSON**: é uma implementação da gramática de expressão de formulários para ajudar você a consultar a estrutura JSON e criar regras para formulários adaptáveis Headless. A gramática é um mashup de funções e operadores semelhantes a planilhas e o [JMESPath](https://jmespath.org/) é uma linguagem de consulta JSON. Você pode usar o [playground](https://opensource.adobe.com/json-formula/dist/index.html) para explorar a sintaxe e os recursos da fórmula JSON.
