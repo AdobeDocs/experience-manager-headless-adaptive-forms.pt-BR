@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: headless, formulário adaptável, arquitetura
 hide: false
 exl-id: ee7096d8-89e2-41e0-85e7-b26457df96fb
-source-git-commit: 56ad9d8fefc4933847061ba6007ad367984bd2e0
+source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '918'
 ht-degree: 0%
 
 ---
@@ -68,13 +68,15 @@ As ferramentas a seguir ajudam a criar e integrar formulários adaptáveis Headl
 * **Associador de reação**: fornece ganchos sobre o controlador para adicionar estado aos Componentes de Formulário. Também é útil no preenchimento prévio de um formulário.
 * **Biblioteca de componentes**: fornece Componentes do Espectro do React e usa ganchos no módulo Binder do React para adicionar estado a esses componentes.
 
-Além de fornecer as APIs para validar as restrições aplicadas a vários campos de um formulário, o Forms Web SDK fornece ganchos para conectar formulários adaptáveis headless à estrutura da interface do usuário. Ele também fornece o Renderizador de reação&#x200B; para formulários adaptáveis headless para ajudar a integrar um formulário adaptável headless ao seu aplicativo. Os seguintes componentes do SDK da Web estão disponíveis:
+Além de fornecer as APIs para validar as restrições aplicadas a vários campos de um formulário, o Forms Web SDK fornece ganchos para conectar formulários adaptáveis headless à estrutura da interface do usuário. Ele também fornece o Renderizador de reação&#x200B; para formulários adaptáveis headless para ajudar a integrar um formulário adaptável headless ao seu aplicativo. Os seguintes componentes do Web SDK estão disponíveis:
 
 * **[@aemforms/af-response-components](https://www.npmjs.com/package/@aemforms/af-react-components)**
 * **[@aemforms/af-response-renderer](https://www.npmjs.com/package/@aemforms/af-react-renderer)**
 * **[@aemforms/af-core](https://www.npmjs.com/package/@aemforms/af-core)**
 
 Todos esses componentes estão incluídos no Arquétipo AEM. Quando você cria um projeto AEM Archetype 37 ou posterior para formulários adaptáveis headless, a versão mais recente das bibliotecas listadas acima é incluída no projeto.
+
+* O **Code playground**: [Code playground](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en) é um ambiente interativo projetado para os desenvolvedores experimentarem, aprenderem e testarem os recursos do Headless Adaptive Forms.
 
 **Aplicativo iniciado**: o Adobe também lançou um aplicativo iniciado para ajudá-lo a iniciar rapidamente com formulários adaptáveis headless.
 
@@ -86,8 +88,9 @@ Core-Components: It enables use to render an Adaptive Form using JSON structure.
 
 **Extensão de Código do Visual Studio**: [Extensão de Código do Visual Studio](visual-studio-code-extension-for-headless-adaptive-forms.md) para ajudar a criar uma estrutura JSON válida. Ele fornece suporte e validação do IntelliSense para a estrutura JSON de formulários, juntamente com funções comuns, como adicionar, excluir ou renomear componentes de uma estrutura JSON.
 
-**Especificações da versão 2.0 do Forms adaptável**: a especificação da versão 2.0 do Forms adaptável fornece informações detalhadas sobre todos os componentes, restrições e métodos disponíveis para definir formulários adaptáveis headless. A especificação está disponível no formato [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf).
-
 **APIs HTTP e JavaScript**: [APIs HTTP](https://opensource.adobe.com/aem-forms-af-runtime/api/) permitem listar, buscar, validar, enviar e rastrear o status de envio de formulários headless. As [APIs JS](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) ajudam você a usar formulários adaptáveis headless com qualquer estrutura de interface do usuário baseada no JavaScript.
 
 **Fórmula JSON**: é uma implementação da gramática de expressão de formulários para ajudar você a consultar a estrutura JSON e criar regras para formulários adaptáveis Headless. A gramática é um mashup de funções e operadores semelhantes a planilhas e o [JMESPath](https://jmespath.org/) é uma linguagem de consulta JSON. Você pode usar o [playground](https://opensource.adobe.com/json-formula/dist/index.html) para explorar a sintaxe e os recursos da fórmula JSON.
+
+**Especificações da versão 2.0 do Forms adaptável**: a especificação da versão 2.0 do Forms adaptável fornece informações detalhadas sobre todos os componentes, restrições e métodos disponíveis para definir formulários adaptáveis headless. A especificação está disponível no formato [PDF](/help/assets/headless-adaptive-forms-specification.pdf).
+

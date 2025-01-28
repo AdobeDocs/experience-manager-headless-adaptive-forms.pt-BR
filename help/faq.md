@@ -9,7 +9,7 @@ level: Beginner, Intermediate
 keywords: headless, formulário adaptável, Perguntas frequentes
 hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 1%
@@ -46,7 +46,7 @@ Você pode usar o aplicativo inicial para renderizar e pré-visualizar um formul
 
 ## É possível usar formulários adaptáveis headless com estruturas personalizadas?
 
-Os formulários adaptáveis headless são baseados na [especificação padrão](/help/assets/Headless-Adaptive-Form-Specification.pdf). É possível estender a especificação para usá-la na criação de componentes personalizados. Por exemplo, componentes para a interface do Chakra, Vue.js e muito mais.
+Os formulários adaptáveis headless são baseados na [especificação padrão](/help/assets/headless-adaptive-forms-specification.pdf). É possível estender a especificação para usá-la na criação de componentes personalizados. Por exemplo, componentes para a interface do Chakra, Vue.js e muito mais.
 
 ## Os formulários adaptáveis headless suportam campos em cascata?
 
@@ -63,7 +63,7 @@ At this moment, you use the Adaptive Form Editor to specify the JSON structure a
 
 ## Posso usar formulários adaptáveis headless com o SPA do Angular?
 
-Você pode usar o SDK da Web para integrar formulários adaptáveis headless ao SPA do Angular. É independente de qualquer estrutura. Você pode usar o SDK do React como referência.
+Você pode usar o Web SDK para integrar formulários adaptáveis headless ao SPA do Angular. É independente de qualquer estrutura. Você pode usar o React SDK como referência.
 
 <!-- ## Should the `-r prerelease` switch be used every time to start the AEM SDK instance or only for the first time?
 
