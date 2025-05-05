@@ -23,7 +23,7 @@ Ao implantar o projeto com base no Arquétipo AEM 41 ou posterior em suas instâ
 
 Antes de ativar o Forms adaptável headless no ambiente Forms AEM 6.5,
 
-* [Atualize para AEM 6.5 Forms Service Pack 16 (6.5.16.0) ou posterior](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html).
+* [Atualize para AEM 6.5 Forms Service Pack 16 (6.5.16.0) ou posterior](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=pt-BR).
 
 * Instale a última versão do [Apache Maven](https://maven.apache.org/download.cgi).
 
@@ -115,7 +115,7 @@ Para criar um projeto com base no Arquétipo AEM 41 ou [posterior](https://githu
 
    Depois que o projeto do Arquétipo AEM é criado com êxito, um pacote AEM é gerado. Você pode encontrar o pacote em [Pasta de Projeto do Arquétipo AEM]\all\target\[appid].all-[version].zip
 
-1. Use o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) para implantar o pacote [Pasta do Projeto do Arquétipo AEM]\all\target\[appid].all-[version].zip em todas as instâncias do Autor e do Publish.
+1. Use o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) para implantar o pacote [Pasta do Projeto do Arquétipo AEM]\all\target\[appid].all-[version].zip em todas as instâncias do Autor e do Publish.
 
 >[!NOTE]
 >

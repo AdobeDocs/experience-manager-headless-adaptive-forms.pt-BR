@@ -30,8 +30,8 @@ ht-degree: 4%
 + Criar formulários adaptáveis headless {#authoring-headless-adaptive-forms}
    + [Criar um formulário adaptável headless usando o editor adaptável do Forms](create-a-headless-adaptive-form.md)
 + Referência do desenvolvedor {#developer-reference}
-   + [Portal do desenvolvedor](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en)
-   + [Playground do código](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
+   + [Portal do desenvolvedor](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=pt-BR)
+   + [Playground do código](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=pt-BR)
    + [APIs de formulários adaptáveis headless](https://opensource.adobe.com/aem-forms-af-runtime/api/)
 + [Perguntas frequentes](faq.md)
 + [Resolução de problemas](troubleshooting.md)
