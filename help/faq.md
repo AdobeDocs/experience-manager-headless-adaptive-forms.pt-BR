@@ -1,5 +1,5 @@
 ---
-title: Perguntas frequentes
+title: Perguntas frequentes sobre o Headless Adaptive Forms
 description: Perguntas frequentes
 solution: Experience Manager Forms
 feature: Adaptive Forms
@@ -9,10 +9,10 @@ level: Beginner, Intermediate
 keywords: headless, formulário adaptável, Perguntas frequentes
 hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 1%
+source-wordcount: '431'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,8 @@ ht-degree: 1%
 
 ## Devo saber o React.js para usar formulários adaptáveis headless?
 
-Você pode usar qualquer estrutura, biblioteca ou idioma para renderizar formulários adaptáveis Headless e usar nossas APIs REST para validar e enviar os formulários. A biblioteca principal de AF, fornecida OOTB, é independente da estrutura. As bibliotecas de componentes React-Render e React-Component, fornecidas OOTB, são para sua conveniência. Você pode desenvolver seus próprios componentes e não está limitado a usá-los.
+Você pode usar qualquer estrutura, biblioteca ou idioma para renderizar formulários adaptáveis Headless e usar as APIs REST do Adobe para validar e enviar os formulários. A biblioteca AF-core, fornecida imediatamente, é independente de estrutura. As bibliotecas de componentes React-Render e React-Component, também fornecidas prontas para uso, são para sua conveniência. Você pode criar seus próprios componentes; não se limita aos fornecidos.
+
 
 <!-- 
 ## Did Adobe release a new AEM Archetype for Headless adaptive forms?
@@ -29,9 +30,9 @@ You can use Archetype 37 with flag `includeFormsheadless` or later flag to creat
 
 -->
 
-## Preciso que o Forms as a Cloud Service sandbox use formulários adaptáveis headless?
+## Preciso da sandbox do Forms as a Cloud Service para usar formulários adaptáveis headless?
 
-Você pode usar o aplicativo inicial para começar a desenvolver e estilizar seus formulários adaptáveis headless. Você precisa do Forms as a Cloud Service para hospedar e servir formulários adaptáveis headless junto com recursos de formulários de back-end.
+Você pode usar o aplicativo inicial para começar a desenvolver e estilizar seus formulários adaptáveis headless. Você precisa do Forms as a Cloud Service para hospedar e fornecer formulários adaptáveis headless junto com recursos de formulários de back-end.
 
 <!-- ## Do I need an archetype project to develop Headless adaptive forms?
 
@@ -50,7 +51,7 @@ Os formulários adaptáveis headless são baseados na [especificação padrão](
 
 ## Os formulários adaptáveis headless suportam campos em cascata?
 
-Em campos em cascata, o conteúdo do segundo campo depende do conteúdo escolhido no primeiro campo. O [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/adaptive-form-dynamic-behaviour--options&amp;args=formJson.items[0].fieldType:drop-down;formJson.items[0].minimum:!undefined;formJson.items[0].maximum:!undefined;formJson.items[0].label.value:Choose+number+of+options;formJson.items[0].enum[0]:1;formJson.items[0].enum[1]:2;formJson.items[0].enum[2]:3;formJson.items[1].fieldType:drop-down) fornece um exemplo de campos em cascata.
+Em campos em cascata, o conteúdo do segundo campo depende do conteúdo escolhido no primeiro campo. O [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/adaptive-form-dynamic-behaviour--options&args=formJson.items[0].fieldType:drop-down;formJson.items[0].minimum:!undefined;formJson.items[0].maximum:!undefined;formJson.items[0].label.value:Choose+number+of+options;formJson.items[0].enum[0]:1;formJson.items[0].enum[1]:2;formJson.items[0].enum[2]:3;formJson.items[1].fieldType:drop-down) fornece um exemplo de campos em cascata.
 
 ## Os formulários adaptáveis headless permitem preencher formulários com dados personalizados?
 
@@ -61,9 +62,9 @@ Formulários adaptáveis headless permitem preencher formulários com dados pers
 
 At this moment, you use the Adaptive Form Editor to specify the JSON structure and set submit action for the forms. Support for drag-and-drop components, applying rules using editor, and more editor-related options would be available later in the beta phase. Keep a watch on release notes.  -->
 
-## Posso usar formulários adaptáveis headless com o SPA do Angular?
+## Posso usar formulários adaptáveis headless com o Angular SPA?
 
-Você pode usar o Web SDK para integrar formulários adaptáveis headless ao SPA do Angular. É independente de qualquer estrutura. Você pode usar o React SDK como referência.
+Você pode usar o Web SDK para integrar formulários adaptáveis headless ao Angular SPA. É independente de qualquer estrutura. Você pode usar o React SDK como referência.
 
 <!-- ## Should the `-r prerelease` switch be used every time to start the AEM SDK instance or only for the first time?
 
@@ -82,7 +83,7 @@ You do not require a license.properties file to run AEM Cloud Service SDK.
 
 ## Existe algum plugin para facilitar o desenvolvimento para Headless AF?
 
-Sim, uma extensão está disponível para o Microsoft Visual Studio Code. Ele fornece uma maneira conveniente de criar manualmente os formulários adaptáveis headless JSON.
+Sim — uma extensão do Visual Studio Code permite criar manualmente formulários adaptáveis headless em JSON.
 
 ## Um formulário adaptável headless pode se conectar a qualquer CRM para ler ou gravar dados?
 

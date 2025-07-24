@@ -9,10 +9,10 @@ role: Admin, Developer
 level: Beginner, Intermediate
 hide: false
 exl-id: bfb7e688-d2be-4aaa-ac9b-147cbd74b516
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 5%
+source-wordcount: '127'
+ht-degree: 6%
 
 ---
 
@@ -22,17 +22,17 @@ ht-degree: 5%
 
 ### Problema
 
-Quando você usa o `mvn -PautoInstallPackage clean install` ou comandos semelhantes para implantar um projeto do Arquétipo AEM, ocorre uma falha na implantação do projeto.
+Quando você usa o `mvn -PautoInstallPackage clean install` ou comandos semelhantes para implantar um projeto do Arquétipo do AEM, ocorre uma falha na implantação do projeto.
 
 ### Motivo
 
-Isso pode ocorrer devido a uma versão não compatível ou instalação corrompida de node.js ou NPM.
+Isso pode ocorrer devido a uma versão sem suporte ou instalação corrompida de `node.js` ou `NPM`.
 
 ### Solução
 
 1. Completamente [remova as instalações atuais do Node.JS](https://khushwantsehgal.wordpress.com/2022/06/28/how-to-remove-node-js-completely-from-windows-10/) de seu ambiente.
 
-1. Instale o Node.JS 16.13.0 ou posterior com NPM.
+1. Instalar `node.JS 16.13.0` ou posterior com `NPM`.
 
 1. Reinicialize o computador.
 

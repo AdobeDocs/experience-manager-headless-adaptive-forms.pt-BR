@@ -1,14 +1,13 @@
 ---
 title: Habilitar o Forms adaptável headless no AEM 6.5 Forms
 seo-title: Step-by-Step Guide for enabling Headless Adaptive Forms on AEM 6.5 Forms
-description: Saiba como ativar formulários adaptáveis headless no AEM 6.5 Forms com nosso guia passo a passo. Nosso tutorial o orienta pelo processo, facilitando a integração desse recurso poderoso ao seu site e melhorando a experiência do usuário.
-seo-description: Learn how to enable headless adaptive forms on AEM 6.5 Forms with our step-by-step guide. Our tutorial walks you through the process, making it easy to integrate this powerful feature into your website and improve your user experience.
+description: Saiba como ativar formulários adaptáveis headless no AEM 6.5 Forms com o guia passo a passo da Adobe. Este tutorial o orienta pelo processo, facilitando a integração desse recurso avançado em seu site e melhorando a experiência do usuário.
 contentOwner: Khushwant Singh
 role: Admin
 exl-id: e1a5e7e0-d445-4cca-b8d7-693d9531f075
-source-git-commit: d791daa149d0380b03bb6ba9776db47440feea02
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -17,19 +16,19 @@ ht-degree: 0%
 
 Para ativar o Headless Adaptive Forms no ambiente do AEM 6.5 Forms, configure um projeto com base no AEM Archetype 41 ou posterior e implante-o em todas as instâncias de Autor e Publicação.
 
-Ao implantar o projeto baseado no Arquétipo AEM 41 ou posterior em suas instâncias do Forms do AEM 6.5, você obtém a capacidade de [criar Componentes principais baseados no Forms Adaptável](create-a-headless-adaptive-form.md). Esses formulários são representados no formato JSON e usados como Headful e Headless Adaptive Forms, permitindo maior flexibilidade e personalização em uma variedade de canais, incluindo aplicativos móveis, da Web e nativos.
+Ao implantar o projeto baseado no Arquétipo AEM 41 ou posterior em suas instâncias do Forms do AEM 6.5, você obtém a capacidade de [criar Componentes principais baseados no Forms Adaptável](create-a-headless-adaptive-form.md). Esses formulários são representados no formato JSON e usados como `Headful` e `Headless` Adaptive Forms, permitindo maior flexibilidade e personalização em vários canais, incluindo aplicativos móveis, da Web e nativos.
 
 ## Pré-requisitos {#prerequisites}
 
 Antes de ativar o Forms adaptável headless no ambiente Forms do AEM 6.5,
 
-* [Atualize para o AEM 6.5 Forms Service Pack 16 (6.5.16.0) ou posterior](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=pt-BR).
+* [Atualize para o AEM 6.5 Forms Service Pack 16 (6.5.16.0) ou posterior](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 * Instale a última versão do [Apache Maven](https://maven.apache.org/download.cgi).
 
 * Instale um editor de texto simples. Por exemplo, Microsoft Visual Studio Code.
 
-## Criar e implantar o projeto baseado no Arquétipo do AEM mais recente
+## Criar e implantar o projeto com base no Arquétipo do AEM mais recente
 
 Para criar um projeto baseado no Arquétipo AEM 41 ou [mais tarde](https://github.com/adobe/aem-project-archetype) e implantá-lo em todas as instâncias de Autor e Publicação:
 
@@ -51,7 +50,7 @@ Para criar um projeto baseado no Arquétipo AEM 41 ou [mais tarde](https://githu
       -D aemVersion="6.5.23" 
    ```
 
-   * Linux ou Apple macOS
+   * Linux® ou Apple macOS
 
    ```Shell
       mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
@@ -67,7 +66,7 @@ Para criar um projeto baseado no Arquétipo AEM 41 ou [mais tarde](https://githu
 
    Ao executar o comando acima, considere o seguinte:
 
-   * Atualize o comando para refletir os valores específicos do seu ambiente, incluindo appTitle, appId e groupId. Além disso, defina os valores de includeFormsenrollment como &#39;y&#39;. Se você usa o Forms Portal, defina a opção _includeExamples=y_ para incluir os Componentes principais do Forms Portal no seu projeto.
+   * Atualize o comando para refletir os valores específicos do seu ambiente, incluindo appTitle, appId e groupId. Além disso, defina os valores de includeFormsenrollment para `y`. Se você usa o Forms Portal, defina a opção _includeExamples=y_ para incluir os Componentes principais do Forms Portal no seu projeto.
 
 
 1. (Somente para projetos baseados no Arquétipo versão 41) Depois que o projeto do Arquétipo do AEM for criado, ative temas para o Adaptive Forms baseado em Componentes principais. Para ativar temas:
@@ -112,13 +111,13 @@ Para criar um projeto baseado no Arquétipo AEM 41 ou [mais tarde](https://githu
 
    Depois que o Arquétipo do AEM for criado com êxito, um pacote do AEM será gerado. Você pode encontrar o pacote em [Pasta de Projeto do AEM Archetype]\all\target\[appid].all-[version].zip
 
-1. Use o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) para implantar o [pacote de Pasta de Projeto do Arquétipo do AEM]\all\target\[appid].all-[version].zip em todas as instâncias de Autor e Publicação.
+1. Use o [Gerenciador de Pacotes](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager) para implantar o [pacote de Pasta de Projeto do Arquétipo do AEM]\all\target\[appid].all-[version].zip em todas as instâncias de Autor e Publicação.
 
 >[!NOTE]
 >
 >
 >
->Caso encontre dificuldades ao acessar a caixa de diálogo de logon em uma instância de publicação para instalar o pacote por meio do Gerenciador de Pacotes, tente fazer logon por meio da seguinte URL: http://[URL do Servidor de Publicação]:[PORT]/system/console. Isso permite que você acesse e faça logon na instância de publicação, o que permite prosseguir com o processo de instalação.
+>Se tiver dificuldade ao acessar a caixa de diálogo de logon em uma instância de publicação para instalar o pacote por meio do Gerenciador de Pacotes, tente fazer logon por meio da seguinte URL: `http://[Publish Server URL]`:[PORT]/system/console. Esse processo dá acesso para fazer logon na instância de publicação e permite prosseguir com o processo de instalação.
 
 
 Os Componentes principais são ativados para o seu ambiente. Um modelo de Formulário adaptável baseado em Componentes principais em branco e o tema Tela 3.0 são implantados em seu ambiente, permitindo que você [crie Componentes principais baseados no Forms adaptável](create-a-headless-adaptive-form.md).

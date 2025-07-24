@@ -1,25 +1,35 @@
 ---
-title: Visão geral dos formulários adaptáveis AEM Headless
-description: Visão geral para formulários adaptáveis AEM Headless.
+title: Visão geral do AEM Headless Adaptive Forms
+description: Visão geral dos formulários adaptáveis do AEM Headless.
 hide: true
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
-source-git-commit: 0127f8ddede38083f0932b0e8d7efdd0dd77c3a6
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 3%
+source-wordcount: '477'
+ht-degree: 4%
 
 ---
 
 
 # Notas de versão
 
-Bem-vindo ao lançamento antecipado do Experience Manager Headless Adaptive Forms. Leia a seguir os recursos e as instruções para começar e aproveitar ao máximo a versão.
+Bem-vindo à versão de adoção antecipada dos formulários adaptáveis do Experience Manager Headless. Leia a seguir os recursos e as instruções para começar e aproveitar ao máximo a versão.
 
-Você pode usar os formulários adaptáveis do Adobe Experience Manager Headless para criar aplicativos de formulários usando estruturas de interface do usuário de front-end, como o React, o Angular e muito mais, e usar o SDK da Web do Adaptive Forms para recursos como gerenciamento de estado, validação e integrações com vários outros pontos de contato.
+Use os formulários adaptáveis sem periféricos do Adobe Experience Manager para criar aplicativos de formulários com estruturas de front-end, como o React, o Angular e outros. Use o Forms Web SDK adaptável para gerenciamento de estado, validação e integração com pontos de contato adicionais.
+
 
 A versão inicial do adotor fornece acesso para usar formulários adaptáveis Headless em um [ambiente de desenvolvimento local](setup-development-environment.md). Você pode usar o ambiente de desenvolvimento local para criar e testar formulários adaptáveis Headless.
 
-Os formulários adaptáveis headless recebem melhorias contínuas. Para se manter atualizado com os desenvolvimentos mais recentes, visite esta página regularmente. Esta página fornece informações sobre acesso antecipado, versões mais recentes, novos recursos, melhorias, correções de erros, funcionalidades obsoletas, instruções especiais e planos futuros para alterações.
+Os formulários adaptáveis headless recebem melhorias contínuas. Para se manter atualizado com os desenvolvimentos mais recentes, visite esta página regularmente. Esta página fornece informações sobre o seguinte:
+
+* acesso antecipado
+* versões mais recentes
+* novos recursos
+* melhorias
+* correções de erros
+* funcionalidade obsoleta
+* instruções especiais
+* Futuros planos de alterações
 
 <!-- 
 
@@ -44,13 +54,13 @@ Os formulários adaptáveis headless recebem melhorias contínuas. Para se mante
 
 Na jornada para trazer os formulários adaptáveis do Adobe Experience Manager Headless para você, os seguintes artefatos estão disponíveis na versão mais recente do Adoter:
 
-### AEM FORMS AS A CLOUD SERVICE SDK
+### AEM Forms as a Cloud Service SDK
 
 AEM Forms as a Cloud Service SDK para ajudá-lo a criar, armazenar e buscar formulários adaptáveis Headless. Também ajuda a fornecer preenchimento, validação de regras do lado do servidor e serviços de envio para formulários adaptáveis headless.
 
 ### Forms Web SDK
 
-O Forms Web SDK fornece as APIs para validar restrições aplicadas a vários campos de um formulário e ganchos para conectar a estrutura JSON do formulário à estrutura da interface do usuário. Ele também fornece o Renderizador de reação&#x200B; para formulários adaptáveis headless para ajudar a integrar um formulário adaptável headless ao seu aplicativo. Os seguintes componentes do SDK da Web estão disponíveis:
+O Forms Web SDK fornece as APIs para validar restrições aplicadas a vários campos de um formulário e ganchos para conectar a estrutura JSON do formulário à estrutura da interface. Ele também fornece o Renderizador de reação&#x200B; para formulários adaptáveis headless para ajudar a integrar um formulário adaptável headless ao seu aplicativo. Os seguintes componentes do Web SDK estão disponíveis:
 
 * **[@aemforms/af-response-components](https://www.npmjs.com/package/@aemforms/af-react-components)**
 * **[@aemforms/af-response-renderer](https://www.npmjs.com/package/@aemforms/af-react-renderer)**
@@ -60,13 +70,13 @@ O Forms Web SDK fornece as APIs para validar restrições aplicadas a vários ca
 
 #### Storybook
 
-O [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) fornece uma visão geral de diferentes componentes de formulários adaptáveis headless. Também fornece uma lista de todos os componentes compatíveis, suas propriedades correspondentes e restrições.
+O [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) fornece uma visão geral dos diferentes componentes de formulários adaptáveis headless. Também fornece uma lista de todos os componentes compatíveis, suas propriedades correspondentes e restrições.
 
 ### Componente principal do Forms
 
 <!-- Forms components are the structural elements that constitute the content of the form being authored. These components provide various form fields and ability to customize those fields. -->
 
-Os Componentes principais são um conjunto de componentes padronizados de Gerenciamento de Conteúdo Online (WCM, na sigla em inglês) para ajudar você a acelerar o tempo de desenvolvimento e reduzir o custo de manutenção de seus formulários. O componente de Contêiner do Forms é um componente principal. Ele ajuda a incorporar e renderizar uma estrutura JSON de formulário adaptável headless no editor Forms adaptável do SDK as a Cloud Service do Forms.
+Os Componentes principais são um conjunto de componentes padronizados de Gerenciamento de Conteúdo Online (WCM, na sigla em inglês) para ajudar você a acelerar o tempo de desenvolvimento e reduzir o custo de manutenção de seus formulários. O componente de Contêiner do Forms é um componente principal. Ele ajuda a incorporar e renderizar uma estrutura JSON de formulário adaptável headless no editor Forms adaptável do Forms as a Cloud Service SDK.
 
 ### Especificações adaptáveis do Forms V2
 
@@ -74,7 +84,7 @@ A especificação de formulários adaptáveis headless fornece informações det
 
 ### API HTTP e JS
 
-As [APIs HTTP](https://opensource.adobe.com/aem-forms-af-runtime/api/) permitem listar, buscar, validar, enviar e rastrear o status de envio de formulários headless. As [APIs JS](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) ajudam você a usar formulários adaptáveis headless com qualquer estrutura de interface do usuário baseada no JavaScript.
+As [APIs HTTP](https://opensource.adobe.com/aem-forms-af-runtime/api/) permitem listar, buscar, validar, enviar e rastrear o status de envio de formulários headless. <!-- URL is 404! [JS APIs](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) helps you use Headless adaptive forms with any JavaScript based UI framework. -->
 
 ### Extensão de Código do Visual Studio
 

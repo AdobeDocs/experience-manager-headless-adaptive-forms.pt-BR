@@ -1,6 +1,6 @@
 ---
 title: Arquitetura headless de formulários adaptáveis
-description: Saiba mais sobre a arquitetura do AEM Forms Headless Adaptive Forms e como ele pode ajudar você a criar formulários rapidamente para várias plataformas. Este artigo fornece insights sobre como o Forms adaptável headless funciona e como ele pode ser integrado a diferentes aplicativos para simplificar o processo de criação de formulários.
+description: Saiba mais sobre a arquitetura do Forms adaptável do AEM Forms Headless e como ele pode ajudar você a criar formulários rapidamente para várias plataformas. Este artigo fornece insights sobre como o Forms adaptável headless funciona e como ele pode ser integrado a diferentes aplicativos para simplificar o processo de criação de formulários.
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Headless
@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: headless, formulário adaptável, arquitetura
 hide: false
 exl-id: ee7096d8-89e2-41e0-85e7-b26457df96fb
-source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Um formulário adaptável headless é essencialmente uma estrutura JSON (esquema
 
 ## Arquitetura {#architecture}
 
-Uma arquitetura típica de formulários adaptáveis headless constitui um servidor do Adobe Experience Manager Forms, formulários adaptáveis headless hospedados no servidor do Adobe Experience Manager Forms e seus aplicativos de front-end (site, aplicativo móvel, aplicativos do JavaScript, aplicativos de chat e muito mais) para execuções de formulário específicas do canal.
+Uma arquitetura típica de formulários adaptáveis headless se concentra em um servidor do Adobe Experience Manager Forms que hospeda formulários adaptáveis headless. Os aplicativos front-end (Web, móvel, JavaScript, chatbots e muito mais) renderizam os formulários de cada canal.
 
 A arquitetura típica de uma implantação de formulários adaptáveis headless é semelhante à seguinte:
 
@@ -44,13 +44,13 @@ A typical Headless adaptive forms architecture constitutes an Adobe Experience M
 **Adobe Experience Manager Server**: além de servir como host para formulários adaptáveis headless, o Adobe Experience Manager fornece os seguintes recursos de back-end:
 
 * APIs RESTful para listar, buscar, preencher previamente, validar, enviar e rastrear o status de envio de formulários headless.
-* Editor visual para desenvolver facilmente um formulário adaptável headless.
+* Editor visual para desenvolver um formulário adaptável headless facilmente.
 * Modelo de dados do Forms para receber ou enviar dados para fontes de dados diferentes.
-* Mecanismo de workflow para automatizar tarefas complexas.
+* Um motor de workflow para automatizar tarefas complexas.
 
 **Formulários adaptáveis headless**: um formulário adaptável headless é representado como um arquivo .json. A estrutura JSON define componentes, restrições e estrutura de um formulário.
 
-**Aplicativos front-end**: aplicativos front-end como, SPA (Aplicativos de página única), Aplicativos móveis, Aplicativos JavaScript, consomem formulários adaptáveis headless (a Representação de formulário JSON) e renderizam o formulário em um cliente. Você pode usar o componente de renderização do React fornecido com formulários adaptáveis headless para renderizar um formulário adaptável ou criar seu próprio componente personalizado para renderizar nativamente formulários adaptáveis headless.
+**Aplicativos front-end**: aplicativos front-end como, SPA (Aplicativos de página única), Aplicativos móveis, Aplicativos JavaScript, consomem formulários adaptáveis headless (a Representação de formulário JSON) e renderizam o formulário em um cliente. Você pode usar o componente de renderização do React fornecido com formulários adaptáveis headless para renderizar um formulário adaptável ou criar seu próprio componente personalizado para renderizar formulários adaptáveis headless nativamente.
 
 <!-- ### Understanding Headless adaptive forms definition -->
 
@@ -66,19 +66,19 @@ As ferramentas a seguir ajudam a criar e integrar formulários adaptáveis Headl
 
 * **Processador de regras de negócios**: o processador de regras de negócios aceita a estrutura JSON de formulários como entrada, gerencia o estado dos campos de formulário, executa regras e manipuladores de eventos presentes no JSON.
 * **Associador de reação**: fornece ganchos sobre o controlador para adicionar estado aos Componentes de Formulário. Também é útil no preenchimento prévio de um formulário.
-* **Biblioteca de componentes**: fornece Componentes do Espectro do React e usa ganchos no módulo Binder do React para adicionar estado a esses componentes.
+* **Biblioteca de componentes**: fornece Componentes do Espectro React e usa ganchos no módulo React Binder para adicionar estado a esses componentes.
 
-Além de fornecer as APIs para validar as restrições aplicadas a vários campos de um formulário, o Forms Web SDK fornece ganchos para conectar formulários adaptáveis headless à estrutura da interface do usuário. Ele também fornece o Renderizador de reação&#x200B; para formulários adaptáveis headless para ajudar a integrar um formulário adaptável headless ao seu aplicativo. Os seguintes componentes do Web SDK estão disponíveis:
+Além de fornecer as APIs para validar as restrições aplicadas a vários campos de um formulário, o Forms Web SDK fornece ganchos para conectar formulários adaptáveis headless à estrutura da interface do usuário. Ele também fornece um renderizador do React para formulários adaptáveis headless para ajudar a integrar um formulário adaptável headless ao seu aplicativo. Os seguintes componentes do Web SDK estão disponíveis:
 
 * **[@aemforms/af-response-components](https://www.npmjs.com/package/@aemforms/af-react-components)**
 * **[@aemforms/af-response-renderer](https://www.npmjs.com/package/@aemforms/af-react-renderer)**
 * **[@aemforms/af-core](https://www.npmjs.com/package/@aemforms/af-core)**
 
-Todos esses componentes estão incluídos no Arquétipo AEM. Quando você cria um projeto AEM Archetype 37 ou posterior para formulários adaptáveis headless, a versão mais recente das bibliotecas listadas acima é incluída no projeto.
+Todos esses componentes estão incluídos no Arquétipo do AEM. Quando você cria um projeto do AEM Archetype 37 ou posterior para formulários adaptáveis headless, a versão mais recente das bibliotecas listadas acima é incluída no projeto.
 
-* O **Code playground**: [Code playground](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=pt-BR) é um ambiente interativo projetado para os desenvolvedores experimentarem, aprenderem e testarem os recursos do Headless Adaptive Forms.
+* **Playground de código**: [Playground de código](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en) é um ambiente interativo projetado para os desenvolvedores experimentarem, aprenderem e testarem os recursos do Forms adaptável headless.
 
-**Aplicativo iniciado**: o Adobe também lançou um aplicativo iniciado para ajudá-lo a iniciar rapidamente com formulários adaptáveis headless.
+**Aplicativo iniciado**: a Adobe também lançou um aplicativo iniciado para ajudá-lo a começar rapidamente com formulários adaptáveis headless.
 
 <!-- **View Library (UI Layer)**: A custom form application built in a front-end language. You can use react, Angular, Flutter, NPM, Vue.js, Ionic, BootStrap, or any other language to built front end. You can also use the Headless adaptive forms Super Component, provided out-of-the-box, inside a react application to render a Headless adaptive form. Headless adaptive forms super component makes use of OOTB react spectrum -based form components to render the Headless adaptive form. 
 
@@ -88,7 +88,7 @@ Core-Components: It enables use to render an Adaptive Form using JSON structure.
 
 **Extensão de Código do Visual Studio**: [Extensão de Código do Visual Studio](visual-studio-code-extension-for-headless-adaptive-forms.md) para ajudar a criar uma estrutura JSON válida. Ele fornece suporte e validação do IntelliSense para a estrutura JSON de formulários, juntamente com funções comuns, como adicionar, excluir ou renomear componentes de uma estrutura JSON.
 
-**APIs HTTP e JavaScript**: [APIs HTTP](https://opensource.adobe.com/aem-forms-af-runtime/api/) permitem listar, buscar, validar, enviar e rastrear o status de envio de formulários headless. As [APIs JS](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) ajudam você a usar formulários adaptáveis headless com qualquer estrutura de interface do usuário baseada no JavaScript.
+**APIs HTTP e JavaScript**: [As APIs HTTP](https://opensource.adobe.com/aem-forms-af-runtime/api/) permitem listar, buscar, validar, enviar e rastrear o status de envio de formulários headless. <!-- URL is 404!! [JS APIs](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) helps you use Headless adaptive forms with any JavaScript based UI framework. -->
 
 **Fórmula JSON**: é uma implementação da gramática de expressão de formulários para ajudar você a consultar a estrutura JSON e criar regras para formulários adaptáveis Headless. A gramática é um mashup de funções e operadores semelhantes a planilhas e o [JMESPath](https://jmespath.org/) é uma linguagem de consulta JSON. Você pode usar o [playground](https://opensource.adobe.com/json-formula/dist/index.html) para explorar a sintaxe e os recursos da fórmula JSON.
 

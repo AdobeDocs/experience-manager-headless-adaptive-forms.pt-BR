@@ -9,21 +9,21 @@ level: Beginner, Intermediate
 keywords: headless, formulários adaptáveis, extensão do Visual Studio Code
 hide: false
 exl-id: 11960e91-6c09-48d4-9d57-37537f808cd4
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
 
 # Extensão do Microsoft Visual Studio Code para formulários adaptáveis Headless
 
-Se você usa o Microsoft® Visual Studio Code as IDE, é possível usar a extensão Adaptive Forms para Microsoft Visual Studio Code. A extensão:
+Se você usa o Microsoft® Visual Studio Code como um IDE (Integrated Development Environment), é possível usar a extensão Adaptive Forms para o Microsoft Visual Studio Code. A extensão:
 
-* Adiciona recursos do IntelliSense para o Adaptive Forms ao Visual Studio Code
-* Ajuda a validar e preencher automaticamente a sintaxe JSON para componentes de formulários adaptáveis headless
-* Fornece um painel para navegar facilmente pela estrutura de um formulário adaptável headless
-* Ajuda a traduzir um formulário adaptável headless
+* Adiciona recursos do IntelliSense para o Adaptive Forms ao Visual Studio Code.
+* Ajuda a validar e preencher automaticamente a sintaxe JSON para componentes de formulários adaptáveis headless.
+* Navega pela estrutura de um formulário adaptável headless facilmente por um painel.
+* Ajuda a traduzir um formulário adaptável Headless.
 
 <!-- 
 
@@ -51,4 +51,4 @@ Adobe provides an extension for Microsoft&reg; Visual Studio Code to make it eas
    ![Instalando extensão](/help/assets/install-extension.png)
 
 
-   Para obter informações sobre arquivos .vsix, consulte a [Ajuda do Microsoft Visual Studio Code](https://code.visualstudio.com/docs/editor/extension-marketplace#_install-from-a-vsix).
+   Para obter informações sobre arquivos .vsix, consulte a [Ajuda do Microsoft Visual Studio Code](https://code.visualstudio.com/docs/configure/extensions/extension-marketplace#_install-from-a-vsix).

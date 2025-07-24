@@ -1,8 +1,8 @@
 ---
 title: Usar eventos para manipular e enviar dados de formulários adaptáveis do formulário headless
-description: Usar eventos para manipular e enviar dados de formulários adaptáveis do formulário headless
+description: Use eventos para manipular e enviar dados de formulários adaptáveis do formulário headless.
 hide: false
-source-git-commit: ddd353329dfe5b47734d904b9a5e684051becc5b
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
@@ -16,10 +16,10 @@ Até agora, você aprenderá a [criar um formulário adaptável headless persona
 
 Este artigo exibe o envio de dados para um endpoint Rest. Você pode configurar o formulário para enviar os dados a qualquer fonte de dados
 
-## Como entender o modelo de dados
+## Entender o modelo de dados
 
 
 
-## Utilização de eventos para se comunicar com o modelo de dados
+## Usar eventos para se comunicar com o modelo de dados
 
-## Utilização de eventos para enviar dados a uma fonte de dados
+## Usar eventos para enviar dados a uma fonte de dados

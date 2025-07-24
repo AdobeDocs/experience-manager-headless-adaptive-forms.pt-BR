@@ -1,13 +1,13 @@
 ---
 user-guide-title: Formulários adaptáveis do Adobe Experience Manager Headless
-breadcrumb-title: Formulários adaptáveis AEM Headless
+breadcrumb-title: Formulários adaptáveis do AEM Headless
 user-guide-description: Documentação dos formulários adaptáveis do Adobe Experience Manager Headless
 feature: Adaptive Forms
 role: Developer
 hide: false
-source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '146'
 ht-degree: 4%
 
 ---
@@ -18,20 +18,20 @@ ht-degree: 4%
 + [Visão geral](overview.md)
 + [Teste de visão geral](overview-testing.md)
 + [Arquitetura](architecture.md)
-+ Instalação rápida {#quick-setup}
-   + [Ativar o Forms adaptável headless no AEM 6.5 Forms](enable-headless-adaptive-forms-and-core-components.md)
-   + [Ativar o Forms adaptável headless no AEM Forms as a Cloud Service](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md)
++ Configuração rápida {#quick-setup}
+   + [Habilitar o Forms adaptável headless no AEM 6.5 Forms](enable-headless-adaptive-forms-and-core-components.md)
+   + [Habilitar o Forms adaptável headless no AEM Forms as a Cloud Service](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md)
 + Tutorial {#tutorial}
    + [Crie um Forms envolvente usando os Componentes principais e o Forms adaptável headless no AEM Forms as a Cloud Service](build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service.md)
-   + [Criar Forms envolvente usando componentes principais e Forms adaptável headless no AEM 6.5 Forms](build-engaging-forms-using-core-components-and-headless-adaptive-forms-on-aem-65-forms.md)
+   + [Crie Forms envolvente usando componentes principais e Forms adaptável headless no AEM 6.5 Forms](build-engaging-forms-using-core-components-and-headless-adaptive-forms-on-aem-65-forms.md)
 + Introdução ao uso do kit inicial{#get-started}
-   + [Criar e publicar um formulário headless usando o kit inicial](create-and-publish-a-headless-form.md)
+   + [Criar e publicar um formulário headless usando um kit inicial](create-and-publish-a-headless-form.md)
    + [Usar uma biblioteca de reação personalizada para renderizar um formulário headless](use-google-material-ui-react-components-to-render-a-headless-form.md)
 + Criar formulários adaptáveis headless {#authoring-headless-adaptive-forms}
    + [Criar um formulário adaptável headless usando o editor adaptável do Forms](create-a-headless-adaptive-form.md)
 + Referência do desenvolvedor {#developer-reference}
-   + [Portal do desenvolvedor](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=pt-BR)
-   + [Playground do código](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=pt-BR)
+   + [Portal do desenvolvedor](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en)
+   + [Playground do código](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
    + [APIs de formulários adaptáveis headless](https://opensource.adobe.com/aem-forms-af-runtime/api/)
 + [Perguntas frequentes](faq.md)
 + [Resolução de problemas](troubleshooting.md)
