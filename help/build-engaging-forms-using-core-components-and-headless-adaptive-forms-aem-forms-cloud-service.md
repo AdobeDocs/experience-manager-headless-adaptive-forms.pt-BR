@@ -609,12 +609,12 @@ Agora você sabe como criar formulários adaptáveis e entregá-los em canais co
 
 ## Recursos
 
-* [Introdução aos componentes principais de formulários adaptáveis](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)
+* [Introdução aos componentes principais de formulários adaptáveis](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [Criar um formulário adaptável usando os componentes principais](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
+* [Criar um formulário adaptável usando os componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
 * [Atualizar estilo do formulário adaptável baseado em componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
-* [Headless adaptive forms](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview)
+* [Headless adaptive forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Usando um kit inicial Headless do React](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
+* [Usando um kit inicial Headless do React](https://experienceleague.adobe.com/pt-br/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)

@@ -303,7 +303,7 @@ Execute as seguintes etapas, na ordem listada, para ativar o Headless Adaptive F
       git push origin
       ```
 
-1. Depois que os arquivos forem confirmados no Repositório Git, [Execute o pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-deployment).
+1. Depois que os arquivos forem confirmados no Repositório Git, [Execute o pipeline](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/using/code-deployment).
 
    Depois que a execução do pipeline for bem-sucedida, os Componentes principais adaptáveis do Forms serão ativados para o ambiente correspondente. Além disso, um modelo de Forms adaptável (Componentes principais) e o tema do Canvas 3.0 são adicionados ao ambiente do Forms as a Cloud Service, fornecendo opções para personalizar e criar Componentes principais com base no Adaptive Forms.
 

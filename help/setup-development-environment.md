@@ -75,7 +75,7 @@ Ela está no formato .zip. A versão compatível é aem-sdk-2022.7.8085.20220725
 
    >[!NOTE]
    >
-   > Não clique duas vezes no arquivo .jar para iniciá-lo. Resulta em um [erro](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click).
+   > Não clique duas vezes no arquivo .jar para iniciá-lo. Resulta em um [erro](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click).
 
 1. Abra o prompt de comando:
    * No Windows, use a opção **Executar como Administrador** para abrir o prompt de comando no modo elevado.
