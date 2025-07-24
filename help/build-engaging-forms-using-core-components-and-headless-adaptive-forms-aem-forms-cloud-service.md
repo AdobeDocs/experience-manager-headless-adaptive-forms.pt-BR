@@ -86,6 +86,7 @@ Nesta lição, você atuará como um usuário empresarial e criará um adaptive 
 
    1. Abra <https://pipedream.com/requestbin> em uma nova guia do navegador.
    1. Clique em **Criar um compartimento público** e copie a URL do ponto de acesso.
+
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
@@ -93,23 +94,29 @@ Nesta lição, você atuará como um usuário empresarial e criará um adaptive 
 1. Crie um formulário adaptável usando a interface do assistente:
 
    1. Na guia do navegador utilizada na lição 1, acesse a interface web do AEM Forms as a Cloud Service e navegue até Formulários e documentos.
+
       ![](/help/assets/screenshot2028114029.png)
 
    1. Clique em **Criar** > **Formulário adaptável**.
+
       ![](/help/assets/screenshot2028114629.png)
 
    1. Selecione o modelo **Em branco com componentes principais** na tela de seleção de modelos, conforme mostrado abaixo:
+
       ![](/help/assets/screenshot202023-03-0120at206.09.1520pm.png)
 
    1. Clique na guia **Estilo** e selecione o tema **wknd-theme**, conforme mostrado abaixo:
+
       ![](/help/assets/screenshot202023-03-0120at206.09.2320pm.png)
 
    1. Clique na guia **Envio**, selecione o cartão **Enviar para o ponto de extremidade REST** e especifique o compartimento público na **URL para o campo Solicitação POST**, conforme mostrado abaixo:
+
       ![](/help/assets/screenshot202023-03-0120at206.09.5320pm.png)
 
    1. Clique em **Criar**. Especifique um nome e um título no formulário. Por exemplo, **registro**. Clique em **Criar**.
 
    1. O editor de formulário adaptável é aberto. Ignore quaisquer pop-ups ou caixas de diálogo de preferências ou informações. Clique no navegador de componentes no painel à esquerda e adicione os componentes **Cabeçalho** e **Rodapé** respectivamente à parte superior e inferior do formulário em branco.
+
       ![](/help/assets/screenshot2028121929.png)
 
    1. Arraste e solte componentes do navegador Componentes para criar um formulário, semelhante ao seguinte:
@@ -121,6 +128,7 @@ Nesta lição, você atuará como um usuário empresarial e criará um adaptive 
    1. Clique no componente **Número de telefone** para que o menu pop-up seja exibido. Clique no **ícone de ferramenta** no menu para configurar o campo.
 
    1. Abra a **guia de validações**, marque o campo **Obrigatório** e clique em **Concluído**. A mensagem de sucesso é exibida.
+
       ![](/help/assets/screenshot2028123529.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot2028123629.png){width="50%" align="left"}
@@ -132,9 +140,11 @@ Nesta lição, você atuará como um usuário empresarial e criará um adaptive 
    1. Preencha o formulário com dados fictícios.
 
    1. Envie o formulário.
+
       ![](/help/assets/screenshot2028125729.png)
 
    1. Na guia Solicitar compartimento, verifique os dados enviados.
+
       ![](/help/assets/screenshot2028125829.png)
 
 1. Adicionar interatividade ao formulário com regras:

@@ -86,9 +86,11 @@ Como usuário empresarial, você usará o editor Forms adaptável e seus Compone
 1. Crie um ponto de acesso de envio para o formulário:
 
    1. Abra <https://pipedream.com/requestbin> em uma nova guia do navegador.
+
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
    1. Clique em **Criar um compartimento público** e copie a URL do ponto de acesso.
+
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
 
    Esse endpoint específico serve como exemplo para enviar e exibir dados. Na produção real, você usa seu próprio endpoint ou fontes de dados para armazenar os dados capturados.
@@ -98,12 +100,15 @@ Como usuário empresarial, você usará o editor Forms adaptável e seus Compone
    1. Na guia do navegador usada na Lição 1, navegue até a interface da Web do AEM Forms e navegue até **Forms** > **Forms e Documentos**.
 
    1. Clique em **Criar** e selecione Formulário adaptável.
+
       ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
 
    1. Selecione o modelo **Em branco com Componentes Principais** na tela de seleção de modelo como mostrado abaixo e clique em **Avançar**.
+
       ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
 
    1. Especifique `Contact us` como o **Título** do formulário. Verifique se o **Nome** do formulário é `contact-us`.
+
       ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
 
    1. Clique em **Criar**. Uma caixa de diálogo é exibida.
