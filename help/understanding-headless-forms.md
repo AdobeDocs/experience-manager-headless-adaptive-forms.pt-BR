@@ -222,5 +222,5 @@ Para cenários móveis e offline, a abordagem recomendada é [criar seu próprio
 * [Perguntas frequentes](faq.md)
 * [Criar e publicar um formulário headless](create-and-publish-a-headless-form.md)
 * [APIs de formulários adaptáveis headless](https://opensource.adobe.com/aem-forms-af-runtime/api/)
-* [Playground de código](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
+* [Playground de código](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=pt-BR)
 * [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/)

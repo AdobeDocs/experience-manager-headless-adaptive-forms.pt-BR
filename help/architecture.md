@@ -76,7 +76,7 @@ Além de fornecer as APIs para validar as restrições aplicadas a vários campo
 
 Todos esses componentes estão incluídos no Arquétipo do AEM. Quando você cria um projeto do AEM Archetype 37 ou posterior para formulários adaptáveis headless, a versão mais recente das bibliotecas listadas acima é incluída no projeto.
 
-* **Playground de código**: [Playground de código](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en) é um ambiente interativo projetado para os desenvolvedores experimentarem, aprenderem e testarem os recursos do Forms adaptável headless.
+* **Playground de código**: [Playground de código](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=pt-BR) é um ambiente interativo projetado para os desenvolvedores experimentarem, aprenderem e testarem os recursos do Forms adaptável headless.
 
 **Aplicativo iniciado**: a Adobe também lançou um aplicativo iniciado para ajudá-lo a começar rapidamente com formulários adaptáveis headless.
 
