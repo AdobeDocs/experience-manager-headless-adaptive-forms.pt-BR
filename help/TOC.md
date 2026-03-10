@@ -5,10 +5,10 @@ user-guide-description: Documentação dos formulários adaptáveis do Adobe Exp
 feature: Adaptive Forms
 role: Developer
 hide: false
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 4%
+source-wordcount: '195'
+ht-degree: 3%
 
 ---
 
@@ -18,6 +18,7 @@ ht-degree: 4%
 + [Visão geral](overview.md)
 + [Teste de visão geral](overview-testing.md)
 + [Arquitetura](architecture.md)
++ [Noções básicas sobre formulários headless - conceitos e perguntas frequentes](understanding-headless-forms.md)
 + Configuração rápida {#quick-setup}
    + [Habilitar o Forms adaptável headless no AEM 6.5 Forms](enable-headless-adaptive-forms-and-core-components.md)
    + [Habilitar o Forms adaptável headless no AEM Forms as a Cloud Service](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md)
@@ -27,11 +28,14 @@ ht-degree: 4%
 + Introdução ao uso do kit inicial{#get-started}
    + [Criar e publicar um formulário headless usando um kit inicial](create-and-publish-a-headless-form.md)
    + [Usar uma biblioteca de reação personalizada para renderizar um formulário headless](use-google-material-ui-react-components-to-render-a-headless-form.md)
+   + [Usar componentes personalizados para renderizar um formulário headless](developing-for-headless-forms-using-your-own-components.md)
+   + [Usar eventos para manipular e enviar dados de formulário](use-events-to-handle-and-submit-form-data.md)
+   + [Práticas recomendadas para formulários móveis](mobile-forms-best-practices.md)
 + Criar formulários adaptáveis headless {#authoring-headless-adaptive-forms}
    + [Criar um formulário adaptável headless usando o editor adaptável do Forms](create-a-headless-adaptive-form.md)
 + Referência do desenvolvedor {#developer-reference}
-   + [Portal do desenvolvedor](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=pt-BR)
-   + [Playground do código](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=pt-BR)
+   + [Portal do desenvolvedor](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en)
+   + [Playground de código](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
    + [APIs de formulários adaptáveis headless](https://opensource.adobe.com/aem-forms-af-runtime/api/)
 + [Perguntas frequentes](faq.md)
 + [Resolução de problemas](troubleshooting.md)

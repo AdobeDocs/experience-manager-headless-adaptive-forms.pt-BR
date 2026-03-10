@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: headless, formulário adaptável, Perguntas frequentes
 hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -84,6 +84,29 @@ You do not require a license.properties file to run AEM Cloud Service SDK.
 ## Existe algum plugin para facilitar o desenvolvimento para Headless AF?
 
 Sim — uma extensão do Visual Studio Code permite criar manualmente formulários adaptáveis headless em JSON.
+
+## Qual é a abordagem recomendada para formulários móveis ou offline? {#mobile-offline-forms}
+
+Crie seu próprio aplicativo nativo e busque definições de formulário por meio da API Headless Adaptive Forms. Opcionalmente, é possível implementar o suporte off-line (por exemplo, armazenamento local e sincronização). Consulte [Práticas recomendadas para formulários móveis](mobile-forms-best-practices.md) para a abordagem recomendada e links para APIs.
+
+## Como você usa o GraphQL ou APIs headless com o AEM Forms?
+
+O AEM Headless Adaptive Forms usa **APIs HTTP/REST**, não o GraphQL. Seu aplicativo chama essas APIs para listar formulários, buscar uma definição de formulário (JSON), validar, enviar e rastrear o status de envio. Use as [APIs HTTP de formulários adaptáveis headless](https://opensource.adobe.com/aem-forms-af-runtime/api/) para a referência completa. Para saber como os formulários são buscados e renderizados, consulte [Arquitetura](architecture.md) e [Noções básicas sobre formulários headless](understanding-headless-forms.md).
+
+## Como posso implementar e estilizar formulários headless usando componentes do React no Adobe AEM Forms?
+
+Você implementa e estiliza formulários headless usando seus próprios componentes do React e CSS (ou uma biblioteca de interface do usuário, como a interface do usuário de materiais). A lógica do formulário — estado, validação e regras — vem do Forms Web SDK e do formulário JSON; seu aplicativo fornece a interface do usuário que o renderiza.
+
+* Para estilizar um formulário headless com uma biblioteca da interface do usuário do React, consulte [Usar uma biblioteca do react personalizada para renderizar um formulário headless](use-google-material-ui-react-components-to-render-a-headless-form.md).
+* Para criar e mapear componentes personalizados do React para campos de formulário, consulte [Usar componentes personalizados para renderizar um formulário headless](developing-for-headless-forms-using-your-own-components.md).
+
+Para obter conceitos como quando usar formulários headless, gerenciamento de estado e validação, consulte [Noções básicas sobre formulários headless](understanding-headless-forms.md).
+
+## Como posso implementar e personalizar o AEM Forms com CSS personalizado, temas, editores de regras e formulários headless?
+
+**Formulários headless:** o estilo e a aparência estão totalmente sob seu controle. Você usa seus próprios componentes do React (ou outros) e seu próprio CSS; não há temas incorporados. Consulte [Usar uma biblioteca de reação personalizada para renderizar um formulário headless](use-google-material-ui-react-components-to-render-a-headless-form.md) e [Usar componentes personalizados para renderizar um formulário headless](developing-for-headless-forms-using-your-own-components.md) para implementar e estilizar formulários headless.
+
+**AEM Forms Clássico (temas, editor de regras, editor visual):** CSS personalizado, editor de temas e editor de regras aplicam-se à experiência de criação clássica (sem headless) do Forms Adaptive. Para esses tópicos, consulte a [documentação do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-forms.html) sobre o Experience League.
 
 ## Um formulário adaptável headless pode se conectar a qualquer CRM para ler ou gravar dados?
 

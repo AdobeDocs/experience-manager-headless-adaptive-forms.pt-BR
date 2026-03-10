@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: headless, formulário adaptável, arquitetura
 hide: false
 exl-id: ee7096d8-89e2-41e0-85e7-b26457df96fb
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '994'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ A typical Headless adaptive forms architecture constitutes an Adobe Experience M
 
 **Formulários adaptáveis headless**: um formulário adaptável headless é representado como um arquivo .json. A estrutura JSON define componentes, restrições e estrutura de um formulário.
 
-**Aplicativos front-end**: aplicativos front-end como, SPA (Aplicativos de página única), Aplicativos móveis, Aplicativos JavaScript, consomem formulários adaptáveis headless (a Representação de formulário JSON) e renderizam o formulário em um cliente. Você pode usar o componente de renderização do React fornecido com formulários adaptáveis headless para renderizar um formulário adaptável ou criar seu próprio componente personalizado para renderizar formulários adaptáveis headless nativamente.
+**Aplicativos front-end**: aplicativos front-end como, SPA (Aplicativos de página única), Aplicativos móveis, Aplicativos JavaScript, consomem formulários adaptáveis headless (a Representação de formulário JSON) e renderizam o formulário em um cliente. Você pode usar o componente de renderização do React fornecido com formulários adaptáveis headless para renderizar um formulário adaptável ou criar seu próprio componente personalizado para renderizar nativamente formulários adaptáveis headless. Para casos de uso de formulários nativos móveis e offline, a abordagem recomendada é criar seu próprio aplicativo e buscar definições de formulários por meio da API; consulte [Práticas recomendadas para formulários móveis](mobile-forms-best-practices.md).
 
 <!-- ### Understanding Headless adaptive forms definition -->
 
@@ -76,7 +76,7 @@ Além de fornecer as APIs para validar as restrições aplicadas a vários campo
 
 Todos esses componentes estão incluídos no Arquétipo do AEM. Quando você cria um projeto do AEM Archetype 37 ou posterior para formulários adaptáveis headless, a versão mais recente das bibliotecas listadas acima é incluída no projeto.
 
-* **Playground de código**: [Playground de código](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=pt-BR) é um ambiente interativo projetado para os desenvolvedores experimentarem, aprenderem e testarem os recursos do Forms adaptável headless.
+* **Playground de código**: [Playground de código](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en) é um ambiente interativo projetado para os desenvolvedores experimentarem, aprenderem e testarem os recursos do Forms adaptável headless.
 
 **Aplicativo iniciado**: a Adobe também lançou um aplicativo iniciado para ajudá-lo a começar rapidamente com formulários adaptáveis headless.
 

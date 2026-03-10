@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: CMS headless, formulários adaptáveis, interface do usuário headless, Headful CMS, assistentes de voz, alexa, chatbots, arquitetura WhatsApp
 hide: false
 exl-id: 3b5b955b-d59c-43d9-9cc4-3244a08f80dc
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,9 @@ Os formulários adaptáveis headless ajudam a fazer o seguinte:
 * Crie formulários de vários canais de alta qualidade na linguagem de programação de sua escolha.
 * Integre de forma nativa formulários a aplicativos móveis e de desktop, sites e aplicativos de bate-papo.
 * Reutilize os componentes proprietários da interface do usuário com aplicativos de formulários.
-* Aproveite o [potencial do Adobe Experience Manager Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
+* Aproveite o [potencial do Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
+
+Para casos de uso de formulários móveis e offline, a abordagem recomendada é criar seu próprio aplicativo nativo e buscar definições de formulários por meio da API Headless Adaptive Forms. Consulte [Práticas recomendadas para formulários móveis](mobile-forms-best-practices.md) para obter detalhes.
 
 Além disso, você tem a liberdade de desenvolver seus próprios componentes para renderizar um formulário usando qualquer estrutura de interface do usuário e linguagem de programação de sua escolha. Você também pode usar os componentes do React disponíveis prontos para uso para renderizar um formulário adaptável headless.
 
