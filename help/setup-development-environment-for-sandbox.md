@@ -3,10 +3,10 @@ title: Configurar um ambiente de desenvolvimento para uma sandbox do Forms as a 
 description: Configurar um ambiente de desenvolvimento para uma sandbox Forms as a Cloud Service.
 hide: true
 exl-id: befac9ad-d2c4-4705-96fc-f0ea0ef823b8
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 1%
+source-wordcount: '1369'
+ht-degree: 4%
 
 ---
 
@@ -24,9 +24,9 @@ Pronto para criar e testar formulários adaptáveis headless no Cloud Service? A
 * Instale o [Node.js 16.13.0 ou posterior](https://nodejs.org/en/download/) no computador local. <!-- URL IS 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.org/en/learn/how-to-install-nodejs). -->
 
 
-* Crie um programa do AEM as a Cloud Service: Siga as etapas de 1 a 7 do artigo [criar programa](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program) para criar um programa para sua organização.
+* Crie um programa do AEM as a Cloud Service: Siga as etapas de 1 a 7 do artigo [criar programa](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program) para criar um programa para sua organização.
 
-* Habilite o [Canal de pré-lançamento para seu programa do Cloud Service](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#cloud-environments).
+* Habilite o [Canal de pré-lançamento para seu programa do Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#cloud-environments).
 
 ## Configurar fluxo de trabalho
 
@@ -39,11 +39,10 @@ Para habilitar formulários adaptáveis headless na sandbox do Forms as a Cloud 
 <table style="table-layout:auto">
 <tr>
   <td>
-  1. Faça logon em <a href="https://experience.adobe.com/" > https://experience.adobe.com/ </a> e selecione a opção <b> Experience Manager </b>.
-
+  1. Faça logon em <a href="https://experience.adobe.com/" > https://experience.adobe.com/ </a> e selecione a opção </b> do Experience Manager <b>.
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="Programas do AEM as a Cloud Service" src="assets/cloud-manager-experience-manager.png">
     </a>
     <br>
@@ -51,10 +50,10 @@ Para habilitar formulários adaptáveis headless na sandbox do Forms as a Cloud 
 </tr>
 <tr>
   <td>
-  &#x200B;2. Para a opção <b> Cloud Manager </b>, clique em <b> Launch. </b> Uma lista de programas para sua organização é exibida.
+  2. Para a opção <b> Cloud Manager </b>, clique em <b> Inicialização. </b> Uma lista de programas para sua organização é exibida.
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="Programas do AEM as a Cloud Service" src="assets/cloud-manager-experience-manager-launch.png">
     </a>
     <br>
@@ -62,10 +61,10 @@ Para habilitar formulários adaptáveis headless na sandbox do Forms as a Cloud 
 </tr>
 <tr>
   <td>
-    &#x200B;3. Para o seu programa, toque no ... ícone e selecione a opção <b> Editar programa </b>. Uma caixa de diálogo é exibida. 
+    3. Para o seu programa, toque no ... ícone e selecione a opção <b> Editar programa </b>. Uma caixa de diálogo é exibida. 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="Programas do AEM as a Cloud Service" src="assets/edit-program.png">
     </a>
     <br>
@@ -73,10 +72,10 @@ Para habilitar formulários adaptáveis headless na sandbox do Forms as a Cloud 
 </tr>
 <tr>
   <td>
-    &#x200B;4. Na caixa de diálogo Editar programa, vá para a guia <b> Soluções &amp; Complementos </b>, selecione a opção <b> Forms - Inscrição Digital </b> e toque em <b> atualização </b>. 
+    4. Na caixa de diálogo Editar programa, vá para a guia <b> Soluções &amp; Complementos </b>, selecione a opção <b> Forms - Inscrição Digital </b> e toque em <b> atualização </b>. 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="Programas do AEM as a Cloud Service" src="assets/program-solution-addons.png">
     </a>
     <br>
@@ -99,10 +98,9 @@ Para clonar o repositório:
 <tr>
   <td>
   1. Na caixa de pipeline do seu programa, toque em <b> Acessar Informações do Repositório. </b> Uma caixa de diálogo com informações do Repositório é exibida 
-
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="Programas do AEM as a Cloud Service" src="assets/git-repo.png">
     </a>
     <br>
@@ -110,7 +108,7 @@ Para clonar o repositório:
 </tr>
 <tr>
   <td>
-  &#x200B;2. Toque em <b> Gerar senha </b> e copie a URL do Repositório <b>. </b> 
+  2. Toque em <b> Gerar senha </b> e copie a URL do Repositório <b>. </b> 
   </td>
   <td>
       <img alt="Programas do AEM as a Cloud Service" src="assets/repository-info.png">
@@ -119,7 +117,7 @@ Para clonar o repositório:
 </tr>
 <tr>
   <td>
-    &#x200B;3. Na máquina local, abra o prompt de comando, crie uma pasta e execute o seguinte comando e forneça as Credenciais do Repositório, perguntado:
+    3. No computador local, abra o prompt de comando, crie uma pasta e execute o seguinte comando e forneça as Credenciais do repositório, solicitadas:
     </br>
     <code> git clone [Repository URL] </code> </br></br>
     Por exemplo, </br> 
@@ -134,7 +132,7 @@ Para clonar o repositório:
 </table>
 
 
-### &#x200B;3. Criar um projeto com base no Arquétipo do AEM
+### &#x200B;3. Criar um projeto baseado no Arquétipo do AEM
 
 O projeto do arquétipo é um modelo baseado no Maven. Ele cria um projeto mínimo com base na prática recomendada para começar a usar formulários adaptáveis headless. Ele também inclui a funcionalidade de formulários adaptáveis principais do Headless para o Forms as a Cloud Service. É obrigatório criar e implantar o projeto baseado no arquétipo 37 ou posterior.
 ®®
@@ -167,8 +165,9 @@ Dependendo do sistema operacional, execute o comando maven para criar um projeto
    * O modelo **Em branco com componentes principais** com [componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction).
    * Um módulo de front-end do React, `ui.frontend.react.forms.af`. Ele ajuda a renderizar o formulário adaptável headless em um aplicativo react.
 
-+++®®
++++
 
+<!-- Note to author: `&reg;&reg;&reg;` after `+++` prevents the accordion from working properly -->
 
 +++ Apple macOS ou Linux®
 
@@ -188,6 +187,7 @@ Dependendo do sistema operacional, execute o comando maven para criar um projeto
    ```
 
 ™™™
+
 * Defina `appTitle` para definir o título e os grupos de componentes.
 * Defina `appId` para definir o Maven artifactId, o componente, a configuração, os nomes da pasta de conteúdo e os nomes da biblioteca do cliente.
 * Defina `groupId` para definir o Maven groupId e o pacote Java™ Source.
@@ -214,18 +214,17 @@ Após a conclusão bem-sucedida do comando, uma pasta de projeto com o nome espe
       git push origin
    ```
 
-### &#x200B;5. Execute um pipeline de build para seu programa
+### &#x200B;5. Executar um pipeline de build para o seu programa
 
 
 
 <table style="table-layout:auto">
 <tr>
   <td>
-  1. Faça logon em <a href="https://experience.adobe.com/" > https://experience.adobe.com/ </a> e selecione a opção <b> Experience Manager </b>.
-
+  1. Faça logon em <a href="https://experience.adobe.com/" > https://experience.adobe.com/ </a> e selecione a opção </b> do Experience Manager <b>.
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="Programas do AEM as a Cloud Service" src="assets/cloud-manager-experience-manager.png">
     </a>
     <br>
@@ -233,10 +232,10 @@ Após a conclusão bem-sucedida do comando, uma pasta de projeto com o nome espe
 </tr>
 <tr>
   <td>
-  &#x200B;2. Para a opção <b> Cloud Manager </b>, clique em <b> Launch. </b> Uma lista de programas para sua organização é exibida. Abra o programa. 
+  2. Para a opção <b> Cloud Manager </b>, clique em <b> Inicialização. </b> Uma lista de programas para sua organização é exibida. Abra o programa. 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="Programas do AEM as a Cloud Service" src="assets/cloud-manager-experience-manager-launch.png">
     </a>
     <br>
@@ -244,10 +243,10 @@ Após a conclusão bem-sucedida do comando, uma pasta de projeto com o nome espe
 </tr>
 <tr>
   <td>
-    &#x200B;3. Para o seu pipeline, toque no ... ícone e selecione a opção <b> Executar </b>. Se solicitado a executar o pipeline, toque em <b> Executar </b> e aguarde o pipeline <b> Status </b> mudar para <b> Concluído </b>.  
+    3. Para o seu pipeline, toque no ... ícone e selecione a opção <b> Executar </b>. Se solicitado a executar o pipeline, toque em <b> Executar </b> e aguarde o pipeline <b> Status </b> mudar para <b> Concluído </b>.  
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="Programas do AEM as a Cloud Service" src="assets/run-build-pipeline.png">
     </a>
     <br>

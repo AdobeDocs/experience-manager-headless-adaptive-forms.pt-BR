@@ -6,12 +6,12 @@ feature: Adaptive Forms
 topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
-hide: false
+index: true
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 0%
+source-wordcount: '1037'
+ht-degree: 1%
 
 ---
 
@@ -52,7 +52,7 @@ Depois de atender aos requisitos, execute as seguintes etapas para começar:
 
 
 
-## &#x200B;1. Configurar o kit inicial de formulários adaptáveis headless {#install}
+## &#x200B;1.  Configurar o kit inicial de formulários adaptáveis headless {#install}
 
 O kit inicial é um aplicativo React com um exemplo de formulário adaptável headless e bibliotecas correspondentes. Use o kit para desenvolver e testar seus formulários adaptáveis headless e os componentes correspondentes do React. Execute os seguintes comandos para configurar o kit inicial dos formulários adaptáveis headless:
 
@@ -89,7 +89,7 @@ O kit inicial é um aplicativo React com um exemplo de formulário adaptável he
    ![](/help/assets/install-react-app-starter-kit.png)
 
 
-## &#x200B;2. Visualizar o formulário adaptável headless {#preview}
+## &#x200B;2. Pré-visualização do formulário adaptável headless {#preview}
 
 Depois de configurar o kit inicial, é possível visualizar o formulário adaptável headless de amostra, substituí-lo pelo seu próprio formulário personalizado. Você também pode configurar o kit inicial para recuperar um formulário de um servidor do AEM Forms. Para visualizar o formulário
 
@@ -97,9 +97,11 @@ Depois de configurar o kit inicial, é possível visualizar o formulário adapt�
 
    ![](/help/assets/rename-env-file.png)
 
-   <!-- The options in the .env file help you configure source of the forms definantion (.JSON):
+   <!-- 
+    The options in the .env file help you configure source of the forms definantion (.JSON):
     *  To source forms definantion (.JSON) from an AEM Server, set USE_LOCAL_JSON option to false, use the AEM_URL option to specify URL  of your AEM Server, and set the AEM_FORM_PATH option to path of your adaptive form.
-    *  To source forms definantion (.JSON) form-model.json file included in the starter-kit, set USE_LOCAL_JSON option to false. -->
+    *  To source forms definantion (.JSON) form-model.json file included in the starter-kit, set USE_LOCAL_JSON option to false. 
+    -->
 
 1. Use o seguinte comando para executar o aplicativo:
 
@@ -116,7 +118,7 @@ Depois de configurar o kit inicial, é possível visualizar o formulário adapt�
 
    <!--  As you know, in a headless form the form data and logic are separate from the presentation layer and can be used by any client that can make HTTP requests, such as a mobile app, a static site, or a different web application. The form is often managed and stored on a server, which serves as the backend for the form. The client sends requests to the server to retrieve the form, submit data, and receive updated form data. This allows for greater flexibility and integration with different technologies. You can store and retrive a Headless Adaptive form on an AEM Server  -->
 
-## &#x200B;3. Crie e renderize seu próprio formulário adaptável headless{#custom}
+## &#x200B;3. Criar e renderizar seu próprio formulário adaptável headless{#custom}
 
 Um formulário adaptável headless representa o formulário e seus componentes, como campos e botões, no formato JSON (JavaScript Object Notation). A vantagem de usar o formato JSON é que ele pode ser facilmente analisado e usado por várias linguagens de programação, tornando-se uma maneira conveniente de trocar dados de formulário entre sistemas. Para exibir o exemplo de formulário adaptável headless incluído no aplicativo, abra o arquivo `/react-starter-kit-aem-headless-forms/form-definations/form-model.json`.
 

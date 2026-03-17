@@ -7,9 +7,9 @@ topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
 keywords: formulários móveis, aplicativo nativo, formulários offline, API headless
-hide: false
-exl-id: b8e2f1a4-5c6d-4e2a-9f3b-1d4e5a6c7b8d
-source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+index: true
+exl-id: 6f25039f-61fc-4366-9e17-6b2809162c58
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -38,4 +38,4 @@ Essa abordagem mantém o aplicativo acessível para manutenção à medida que o
 * [APIs de formulários adaptáveis headless](https://opensource.adobe.com/aem-forms-af-runtime/api/) - lista, busca, valida e envia formulários de forma programática.
 * [Arquitetura](architecture.md) - Como os formulários adaptáveis headless funcionam e como os aplicativos front-end os consomem.
 
-Para obter uma integração passo a passo, consulte [Criar e publicar um formulário headless](create-and-publish-a-headless-form.md) e o [Portal do desenvolvedor](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=pt-BR).
+Para obter uma integração passo a passo, consulte [Criar e publicar um formulário headless](create-and-publish-a-headless-form.md) e o [Portal do desenvolvedor](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en).

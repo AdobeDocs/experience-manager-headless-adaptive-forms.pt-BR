@@ -10,10 +10,10 @@ keywords: CMS headless, formulários adaptáveis, interface do usuário headless
 hide: true
 hidefromtoc: true
 exl-id: f6a383ea-684b-479d-a15f-8ebced75635e
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 3%
+source-wordcount: '331'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,7 @@ Os formulários adaptáveis headless ajudam a fazer o seguinte:
 * Crie formulários de vários canais de alta qualidade na linguagem de programação de sua escolha.
 * Integre de forma nativa formulários a aplicativos móveis e de desktop, sites e aplicativos de bate-papo.
 * Reutilize os componentes proprietários da interface do usuário com aplicativos de formulários.
-* Usando a [potência do Adobe Experience Manager Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
+* Usando a [potência do Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
 
 Além disso, você tem a liberdade de desenvolver seus próprios componentes para renderizar um formulário usando qualquer estrutura de interface do usuário e linguagem de programação de sua escolha. Você também pode usar os componentes do React disponíveis prontos para uso para renderizar um formulário adaptável headless.
 
@@ -154,32 +154,31 @@ Além disso, você tem a liberdade de desenvolver seus próprios componentes par
         <h2 style="margin-top: 10px;">Heading 3</h2>
         <p>Description 3</p>
     </div>
-    <!-- Add more cards as needed -->
-</div>
+    </div>
 
 
 
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 20px;">
     <div style="width: 30%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-sizing: border-box;">
-        <img src="/help/assets/01-overview-responsive-forms.jpeg" alt="Imagem 1" style="width: 100%; border-radius: 5px;">
-        <h2 style="margin-top: 10px;">Cabeçalho 1</h2>
-        <p>Descrição 1</p>
+        <img src="/help/assets/01-overview-responsive-forms.jpeg" alt="Image 1" style="width: 100%; border-radius: 5px;">
+        <h2 style="margin-top: 10px;">Heading 1</h2>
+        <p>Description 1</p>
     </div>
     <div style="width: 30%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-sizing: border-box;">
-        <img src="/help/assets/02-overview-backend-systems.jpeg" alt="Imagem 2" style="width: 100%; border-radius: 5px;">
-        <h2 style="margin-top: 10px;">Cabeçalho 2</h2>
-        <p>Descrição 2</p>
+        <img src="/help/assets/02-overview-backend-systems.jpeg" alt="Image 2" style="width: 100%; border-radius: 5px;">
+        <h2 style="margin-top: 10px;">Heading 2</h2>
+        <p>Description 2</p>
     </div>
     <div style="width: 30%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-sizing: border-box;">
-        <img src="/help/assets/03-overview-save-and-resume.jpeg" alt="Imagem 3" style="width: 100%; border-radius: 5px;">
-        <h2 style="margin-top: 10px;">Cabeçalho 3</h2>
-        <p>Descrição 3</p>
+        <img src="/help/assets/03-overview-save-and-resume.jpeg" alt="Image 3" style="width: 100%; border-radius: 5px;">
+        <h2 style="margin-top: 10px;">Heading 3</h2>
+        <p>Description 3</p>
     </div>
-    <!-- Add more cards as needed -->
 </div>
 
-—>
+-->
+<!-- Add more cards as needed -->
 
 ## Quem pode usar formulários adaptáveis headless? {#who-can-use-headless-adaptive-forms}
 

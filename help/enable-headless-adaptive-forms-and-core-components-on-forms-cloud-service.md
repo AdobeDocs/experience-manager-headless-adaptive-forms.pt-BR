@@ -11,10 +11,10 @@ docset: CloudService
 hide: true
 hidefromtoc: true
 exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 2%
+source-wordcount: '943'
+ht-degree: 4%
 
 ---
 
@@ -65,7 +65,7 @@ Execute as seguintes etapas, na ordem listada, para ativar o Headless Adaptive F
    Quando solicitado, forneça as credenciais. O repositório é clonado no computador local.
 
 
-## &#x200B;2. Adicione as dependências dos Componentes principais do Forms adaptável ao Repositório Git {#add-adaptive-forms-core-components-dependencies}
+## &#x200B;2. Adicione as dependências dos Componentes principais adaptáveis do Forms ao Repositório Git {#add-adaptive-forms-core-components-dependencies}
 
 1. Abra a pasta Repositório Git em um editor de código de texto simples. Por exemplo, Código VS.
 1. Abra o arquivo `[AEM Repository Folder]\pom.xml` para edição.
@@ -282,7 +282,7 @@ Execute as seguintes etapas, na ordem listada, para ativar o Headless Adaptive F
 
 1. Salvar e fechar o arquivo.
 
-## &#x200B;3. Atualize o projeto para incluir a versão mais recente dos Componentes principais do Forms:
+## &#x200B;3.  Atualize o projeto para incluir a versão mais recente dos Componentes principais do Forms:
 
 1. Abra a [Pasta de Projeto do Arquétipo do AEM]/pom.xml para edição.
 
@@ -303,7 +303,7 @@ Execute as seguintes etapas, na ordem listada, para ativar o Headless Adaptive F
       git push origin
       ```
 
-1. Depois que os arquivos forem confirmados no Repositório Git, [Execute o pipeline](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/using/code-deployment).
+1. Depois que os arquivos forem confirmados no Repositório Git, [Execute o pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-deployment).
 
    Depois que a execução do pipeline for bem-sucedida, os Componentes principais adaptáveis do Forms serão ativados para o ambiente correspondente. Além disso, um modelo de Forms adaptável (Componentes principais) e o tema do Canvas 3.0 são adicionados ao ambiente do Forms as a Cloud Service, fornecendo opções para personalizar e criar Componentes principais com base no Adaptive Forms.
 

@@ -3,9 +3,9 @@ title: Visão geral do AEM Headless Adaptive Forms
 description: Visão geral dos formulários adaptáveis do AEM Headless.
 hide: true
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '513'
 ht-degree: 4%
 
 ---
@@ -47,6 +47,7 @@ Os formulários adaptáveis headless recebem melhorias contínuas. Para se mante
 
 * The service was executing some event handlers twice. The issue is fixed.
 * Fixing Data Generation with different values of dataRef, name and type.
+-->
 
 <!-- ### React Renderer component -->
 
@@ -80,7 +81,7 @@ Os Componentes principais são um conjunto de componentes padronizados de Gerenc
 
 ### Especificações adaptáveis do Forms V2
 
-A especificação de formulários adaptáveis headless fornece informações detalhadas sobre todos os componentes, restrições e métodos disponíveis para definir formulários adaptáveis headless. A especificação está disponível no formato [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf).
+A especificação de formulários adaptáveis headless fornece informações detalhadas sobre todos os componentes, restrições e métodos disponíveis para definir formulários adaptáveis headless. A especificação está disponível no formato [PDF](/help/assets/headless-adaptive-forms-specification.pdf).
 
 ### API HTTP e JS
 
@@ -90,7 +91,8 @@ As [APIs HTTP](https://opensource.adobe.com/aem-forms-af-runtime/api/) permitem 
 
 [Extensão do Visual Studio Code](visual-studio-code-extension-for-headless-adaptive-forms.md) para ajudar a criar uma estrutura JSON válida. Ele fornece suporte e validação do IntelliSense para a estrutura JSON de formulários, juntamente com funções comuns, como adicionar, excluir ou renomear componentes de uma estrutura JSON.
 
-<!-- ## What's next
+<!-- 
+## What's next
 
 The following features would be available in upcoming releases:
 

@@ -4,10 +4,10 @@ description: Crie seu primeiro formulário adaptável headless.
 keywords: headless, formulário adaptável
 hide: true
 exl-id: 99985fed-4a34-47d6-bb6f-79f81e1cd71b
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '1492'
-ht-degree: 3%
+source-wordcount: '1619'
+ht-degree: 5%
 
 ---
 
@@ -105,7 +105,7 @@ Após a conclusão bem-sucedida do comando, uma pasta de projeto com o nome espe
 
 ### &#x200B;2. Implantar o projeto no AEM SDK {#deploy-the-project-to-a-local-development-environment}
 
-Quando você implanta o projeto na sua instância do AEM SDK, ele adiciona a funcionalidade Headless Adaptive do Forms, o modelo **Em branco com componentes principais** e outros recursos incluídos no projeto para o seu ambiente de desenvolvimento. <!-- Deploy the project to your local development environment to locally create Headless Adaptive Forms. or deploy directly to your Forms as a Cloud Service environment. !--> Para implantar em sua instância do AEM SDK:
+Quando você implanta o projeto na sua instância do AEM SDK, ele adiciona a funcionalidade Headless Adaptive do Forms, o modelo **Em branco com componentes principais** e outros recursos incluídos no projeto para o seu ambiente de desenvolvimento. <!-- Deploy the project to your local development environment to locally create Headless Adaptive Forms. or deploy directly to your Forms as a Cloud Service environment. !--> Para implantar na instância do AEM SDK:
 
 1. Abra o prompt de comando. Se você estiver no Windows, abra o prompt de comando com privilégios Administrativos (Execute o prompt de comando ou o [Git bash shell](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/) como administrador).
 
@@ -125,12 +125,12 @@ Quando você implanta o projeto na sua instância do AEM SDK, ele adiciona a fun
    Pode levar muito tempo para resolver as dependências e implantar o projeto. Se houver uma falha na implantação do projeto, consulte o artigo [solução de problemas](troubleshooting.md) para obter os problemas comuns e sua resolução.
 
 
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=pt-BR#coding-against-the-right-aem-version) article : -->
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
 
 
 ### &#x200B;3. Crie um esquema JSON de formulário adaptável headless e carregue-o para sua instância do AEM SDK {#create-add-json-representation-of-headless-adaptive-forms}
 
-Um Forms adaptável headless é representado como um arquivo JSON. Você pode obter um formulário de exemplo do [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact) ou usar as inclusões de formulário de exemplo no projeto de arquétipo em `[Archetype Project]\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\af_model_sample.json`. Este documento usa o formulário [introdução](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) do Storybook. É um formulário de campo único para ajudar você a começar rapidamente a usar o Headless Adaptive Forms. <!-- The [specifications](/help/assets/Headless-Adaptive-Form-Specification.pdf) document provides detailed information about various components, rules, and constraints for Headless Adaptive Forms -->
+Um Forms adaptável headless é representado como um arquivo JSON. Você pode obter um formulário de exemplo do [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact) ou usar as inclusões de formulário de exemplo no projeto de arquétipo em `[Archetype Project]\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\af_model_sample.json`. Este documento usa o formulário [introdução](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) do Storybook. É um formulário de campo único para ajudar você a começar rapidamente a usar o Headless Adaptive Forms. <!-- The [specifications](/help/assets/headless-adaptive-forms-specification.pdf) document provides detailed information about various components, rules, and constraints for Headless Adaptive Forms -->
 
 Para criar e fazer upload do esquema:
 
@@ -166,11 +166,12 @@ Para criar e fazer upload do esquema:
 
 Se houver uma falha no carregamento do `.json`, verifique se o [projeto do Arquétipo do AEM foi implantado com êxito](#deploy-the-project-to-a-local-development-environment).
 
-<!-- 1. Open the [contact form](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact) and tap the [![Raw](assets/raw.png)](faq.md#storybook-example) icon on bottom-right side of the Storybook page to view the source code of the headless . 
+<!--
+1. Open the [contact form](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact) and tap the [![Raw](assets/raw.png)](faq.md#storybook-example) icon on bottom-right side of the Storybook page to view the source code of the headless . 
 
 You can use [Adaptive Forms builder extension for Visual Studio Code](/help/setup-development-environment.md#microsot-visual-studio-code-extension-for-headless-adaptive-forms) to build a JSON schema of your Headless Adaptive Forms. 
 
-You can see [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) for sample JSON schemas and list of components, attributes, and properties. You can also see the [specifications document](/help/assets/Headless-Adaptive-Form-Specification.pdf) for detailed information on all the components, constraints, and methods available to define Headless Adaptive Forms.
+You can see [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) for sample JSON schemas and list of components, attributes, and properties. You can also see the [specifications document](/help/assets/headless-adaptive-forms-specification.pdf) for detailed information on all the components, constraints, and methods available to define Headless Adaptive Forms.
 
 File extension of a JSON schema of Headless Adaptive Forms is .json. For example, formname.json. Create or add the file to your AEM Archetype based project. For example, `\myheadlessform\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\home-loan.json` -> 
 
@@ -180,11 +181,12 @@ You can deploy the project to local development environment. It adds Headless Ad
 
     `mvn -PautoInstallPackage clean install`
 
-If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=pt-BR#building-and-installing).
-    
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=pt-BR#coding-against-the-right-aem-version) article : -->
+If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing).
+-->
 
-### &#x200B;4. Crie um formulário adaptável com base no modelo em branco com componentes principais {#create-adaptive-form-with-blank-with-core-components-template}
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
+
+### &#x200B;4. Criar um formulário adaptável com base no modelo em branco com componentes principais {#create-adaptive-form-with-blank-with-core-components-template}
 
 1. Faça logon em sua [instância do AEM SDK](http://localhost:4502/).
 
@@ -228,4 +230,4 @@ O formulário adaptável criado na etapa anterior está em branco. Configure o F
    1. Após a conclusão, abra localhost:3000 na janela do navegador para exibir um Formulário adaptável headless renderizado.
    1. Para testar a funcionalidade de envio, faça logon no AEM Forms Server e use a opção **Visualizar o formulário no HTML** para abrir o formulário no modo de visualização.
 
-O [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) fornece uma lista de componentes e regras que podem ser definidos em vários Forms adaptáveis headless, juntamente com alguns exemplos do esquema JSON do Forms adaptável headless. Você também pode consultar o documento [especificações](/help/assets/Headless-Adaptive-Form-Specification.pdf) para saber mais sobre várias regras e propriedades relacionadas ao Headless Adaptive Forms.
+O [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) fornece uma lista de componentes e regras que podem ser definidos em vários Forms adaptáveis headless, juntamente com alguns exemplos do esquema JSON do Forms adaptável headless. Você também pode consultar o documento [especificações](/help/assets/headless-adaptive-forms-specification.pdf) para saber mais sobre várias regras e propriedades relacionadas ao Headless Adaptive Forms.
