@@ -61,7 +61,7 @@ Para habilitar formulários adaptáveis headless na sandbox do Forms as a Cloud 
 </tr>
 <tr>
   <td>
-    3. Para o seu programa, toque no ... ícone e selecione a opção <b> Editar programa </b>. Uma caixa de diálogo é exibida. 
+    &#x200B;3. Para o seu programa, toque no ... ícone e selecione a opção <b> Editar programa </b>. Uma caixa de diálogo é exibida. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -72,7 +72,7 @@ Para habilitar formulários adaptáveis headless na sandbox do Forms as a Cloud 
 </tr>
 <tr>
   <td>
-    4. Na caixa de diálogo Editar programa, vá para a guia <b> Soluções &amp; Complementos </b>, selecione a opção <b> Forms - Inscrição Digital </b> e toque em <b> atualização </b>. 
+    &#x200B;4. Na caixa de diálogo Editar programa, vá para a guia <b> Soluções &amp; Complementos </b>, selecione a opção <b> Forms - Inscrição Digital </b> e toque em <b> atualização </b>. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -117,7 +117,7 @@ Para clonar o repositório:
 </tr>
 <tr>
   <td>
-    3. No computador local, abra o prompt de comando, crie uma pasta e execute o seguinte comando e forneça as Credenciais do repositório, solicitadas:
+    &#x200B;3. No computador local, abra o prompt de comando, crie uma pasta e execute o seguinte comando e forneça as Credenciais do repositório, solicitadas:
     </br>
     <code> git clone [Repository URL] </code> </br></br>
     Por exemplo, </br> 
@@ -243,7 +243,7 @@ Após a conclusão bem-sucedida do comando, uma pasta de projeto com o nome espe
 </tr>
 <tr>
   <td>
-    3. Para o seu pipeline, toque no ... ícone e selecione a opção <b> Executar </b>. Se solicitado a executar o pipeline, toque em <b> Executar </b> e aguarde o pipeline <b> Status </b> mudar para <b> Concluído </b>.  
+    &#x200B;3. Para o seu pipeline, toque no ... ícone e selecione a opção <b> Executar </b>. Se solicitado a executar o pipeline, toque em <b> Executar </b> e aguarde o pipeline <b> Status </b> mudar para <b> Concluído </b>.  
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
