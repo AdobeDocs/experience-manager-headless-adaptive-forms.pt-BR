@@ -38,4 +38,4 @@ Essa abordagem mantém o aplicativo acessível para manutenção à medida que o
 * [APIs de formulários adaptáveis headless](https://opensource.adobe.com/aem-forms-af-runtime/api/) - lista, busca, valida e envia formulários de forma programática.
 * [Arquitetura](architecture.md) - Como os formulários adaptáveis headless funcionam e como os aplicativos front-end os consomem.
 
-Para obter uma integração passo a passo, consulte [Criar e publicar um formulário headless](create-and-publish-a-headless-form.md) e o [Portal do desenvolvedor](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en).
+Para obter uma integração passo a passo, consulte [Criar e publicar um formulário headless](create-and-publish-a-headless-form.md) e o [Portal do desenvolvedor](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=pt-BR).

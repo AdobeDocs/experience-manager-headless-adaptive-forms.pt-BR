@@ -27,7 +27,7 @@ Os formulários adaptáveis headless ajudam a fazer o seguinte:
 * Crie formulários de vários canais de alta qualidade na linguagem de programação de sua escolha.
 * Integre de forma nativa formulários a aplicativos móveis e de desktop, sites e aplicativos de bate-papo.
 * Reutilize os componentes proprietários da interface do usuário com aplicativos de formulários.
-* Aproveite o [potencial do Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
+* Aproveite o [potencial do Adobe Experience Manager Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
 
 Para casos de uso de formulários móveis e offline, a abordagem recomendada é criar seu próprio aplicativo nativo e buscar definições de formulários por meio da API Headless Adaptive Forms. Consulte [Práticas recomendadas para formulários móveis](mobile-forms-best-practices.md) para obter detalhes.
 
