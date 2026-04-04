@@ -5,7 +5,7 @@ user-guide-description: Documentação dos formulários adaptáveis do Adobe Exp
 feature: Adaptive Forms
 role: Developer
 index: true
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+source-git-commit: 3af67fd41cdd1e63a460e56ef1d273c90b3954d7
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 3%
@@ -16,12 +16,12 @@ ht-degree: 3%
 # Formulários adaptáveis do Adobe Experience Manager Headless {#using}
 
 + [Visão geral](overview.md)
-+ [Teste de visão geral](overview-testing.md)
++ {hide-from-toc}[Teste de visão geral](overview-testing.md)
 + [Arquitetura](architecture.md)
 + [Noções básicas sobre formulários headless - conceitos e perguntas frequentes](understanding-headless-forms.md)
 + Configuração rápida {#quick-setup}
    + [Habilitar o Forms adaptável headless no AEM 6.5 Forms](enable-headless-adaptive-forms-and-core-components.md)
-   + [Habilitar o Forms adaptável headless no AEM Forms as a Cloud Service](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md)
+   + {hide-from-toc}[Habilitar o Forms Adaptável Headless no AEM Forms as a Cloud Service](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md)
 + Tutorial {#tutorial}
    + [Crie um Forms envolvente usando os Componentes principais e o Forms adaptável headless no AEM Forms as a Cloud Service](build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service.md)
    + [Crie Forms envolvente usando componentes principais e Forms adaptável headless no AEM 6.5 Forms](build-engaging-forms-using-core-components-and-headless-adaptive-forms-on-aem-65-forms.md)
@@ -29,7 +29,7 @@ ht-degree: 3%
    + [Criar e publicar um formulário headless usando um kit inicial](create-and-publish-a-headless-form.md)
    + [Usar uma biblioteca de reação personalizada para renderizar um formulário headless](use-google-material-ui-react-components-to-render-a-headless-form.md)
    + [Usar componentes personalizados para renderizar um formulário headless](developing-for-headless-forms-using-your-own-components.md)
-   + [Usar eventos para manipular e enviar dados de formulário](use-events-to-handle-and-submit-form-data.md)
+   + {hide-from-toc}[Usar eventos para manipular e enviar dados de formulário](use-events-to-handle-and-submit-form-data.md)
    + [Práticas recomendadas para formulários móveis](mobile-forms-best-practices.md)
 + Criar formulários adaptáveis headless {#authoring-headless-adaptive-forms}
    + [Criar um formulário adaptável headless usando o editor adaptável do Forms](create-a-headless-adaptive-form.md)
