@@ -5,10 +5,17 @@ description: Crie formulários envolventes usando componentes principais e a tec
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+TQID: https://experienceleague.adobe.com/vxO7ZkfNQ001uvMujjDotL5le6Q0gYN-YGoYMThWbAs
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '2629'
-ht-degree: 55%
+source-wordcount: 2629
+ht-degree: 52%
 
 ---
 
@@ -407,8 +414,8 @@ Vamos publicar o formulário atualizado para propagar as alterações para o amb
 
    ![](/help/assets/screenshot2028120529.png)
 
-1. Abra a janela do prompt de comando usada para iniciar o projeto **response-starter-kit-aem-headless**, pressione **CTRL+C**,
-digite **Y** e pressione Enter para encerrar o processo do npm. É importante parar o servidor do npm para evitar conflitos nos próximos exercícios.
+1. Abra a janela da Tela de comandos que é usada para iniciar o projeto **react-starter-kit-aem-headless-forms**, pressione **CTRL+C** e
+digite **Y** e pressione a tecla Enter para encerrar o processo npm. É importante parar o servidor do npm para evitar conflitos nos próximos exercícios.
 
 1. Feche as janelas do Visual Studio Code e do prompt de comando.
 
@@ -494,8 +501,8 @@ Para renderizar o formulário hospedado no ambiente de publicação do Cloud Ser
 
    ![](/help/assets/screenshot2028127129.png)
 
-   O comando inicia um servidor de desenvolvimento local e renderiza a definição de formulário obtida do AEM através do método headless usando a biblioteca 
-de front-end da interface do Google Material.
+   O comando inicia um servidor de desenvolvimento local e renderiza a definição do formulário buscado no AEM de forma headless usando o Google
+Biblioteca de front-end da interface do usuário do Material.
 
    >[!NOTE]
    >
@@ -550,8 +557,8 @@ Atualize a variação de componentes no projeto headless. Para alterar a variant
    ![](/help/assets/screenshot2028127729.png)
 
 
-   Essa alteração ocorre para usuários finais sem qualquer alteração na definição do formulário no servidor do AEM Forms, e é específica para o 
-canal headless que está sendo considerado. Por exemplo, um canal da Web neste laboratório.
+   Essa alteração ocorre para usuários finais sem nenhuma alteração na definição de formulário no AEM Forms Server e é específica para o headless
+canal em consideração. Por exemplo, um canal da Web neste laboratório.
 
    ![](/help/assets/screenshot2028127529.png){width="50%" align="left"}
 

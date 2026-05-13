@@ -8,14 +8,24 @@ role: Admin, Developer
 level: Beginner, Intermediate
 index: true
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+TQID: https://experienceleague.adobe.com/f1O-fjIaXVLzKPtCyxy2TeZFXRtdKOE0V2CuXAOcS3I
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: 1037
 ht-degree: 1%
 
 ---
-
-
 
 # Criar e visualizar um formulário headless usando um aplicativo React {#introduction}
 

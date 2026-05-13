@@ -9,10 +9,20 @@ level: Beginner, Intermediate
 topic-tags: develop
 hide: true
 exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+TQID: https://experienceleague.adobe.com/akgLAvLprxdXwMCXmwobbeFDvQF0rPR2qiENi3dLLDM
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '2311'
-ht-degree: 41%
+source-wordcount: 2311
+ht-degree: 39%
 
 ---
 
@@ -365,8 +375,8 @@ Vamos publicar o formulário atualizado para propagar as alterações para o amb
 
    ![](/help/assets/headless-adaptive-form.png)
 
-1. Abra a janela do prompt de comando usada para iniciar o projeto **response-starter-kit-aem-headless**, pressione **CTRL+C**,
-digite **Y** e pressione Enter para encerrar o processo do npm. É importante parar o servidor do npm para evitar conflitos nos próximos exercícios.
+1. Abra a janela da Tela de comandos que é usada para iniciar o projeto **react-starter-kit-aem-headless-forms**, pressione **CTRL+C** e
+digite **Y** e pressione a tecla Enter para encerrar o processo npm. É importante parar o servidor do npm para evitar conflitos nos próximos exercícios.
 
 1. Feche as janelas do Visual Studio Code e do prompt de comando.
 
@@ -499,8 +509,8 @@ Atualize a variação de componentes no projeto headless. Para alterar a variant
    ![](/help/assets/screenshot2028127729.png){width="50%" align="left"}
 
 
-   Essa alteração ocorre para usuários finais sem qualquer alteração na definição do formulário no servidor do AEM Forms, e é específica para o 
-canal headless que está sendo considerado. Por exemplo, um canal da Web neste laboratório.
+   Essa alteração ocorre para usuários finais sem nenhuma alteração na definição de formulário no AEM Forms Server e é específica para o headless
+canal em consideração. Por exemplo, um canal da Web neste laboratório.
 
    ![](/help/assets/aem65-lab-mui-style-update.png)
 
