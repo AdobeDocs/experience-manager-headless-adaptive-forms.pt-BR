@@ -4,10 +4,14 @@ description: Configurar um ambiente de desenvolvimento para uma sandbox Forms as
 hide: true
 exl-id: befac9ad-d2c4-4705-96fc-f0ea0ef823b8
 TQID: https://experienceleague.adobe.com/r2jtS8Z3QIN99-a-z2lLLtW6tVroO3FF--CmzklJVig
-product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
 source-wordcount: 1369
@@ -66,7 +70,7 @@ Para habilitar formulários adaptáveis headless na sandbox do Forms as a Cloud 
 </tr>
 <tr>
   <td>
-    3. Para o seu programa, toque no ... ícone e selecione a opção <b> Editar programa </b>. Uma caixa de diálogo é exibida. 
+    &#x200B;3. Para o seu programa, toque no ... ícone e selecione a opção <b> Editar programa </b>. Uma caixa de diálogo é exibida. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -77,7 +81,7 @@ Para habilitar formulários adaptáveis headless na sandbox do Forms as a Cloud 
 </tr>
 <tr>
   <td>
-    4. Na caixa de diálogo Editar programa, vá para a guia <b> Soluções &amp; Complementos </b>, selecione a opção <b> Forms - Inscrição Digital </b> e toque em <b> atualização </b>. 
+    &#x200B;4. Na caixa de diálogo Editar programa, vá para a guia <b> Soluções &amp; Complementos </b>, selecione a opção <b> Forms - Inscrição Digital </b> e toque em <b> atualização </b>. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -122,7 +126,7 @@ Para clonar o repositório:
 </tr>
 <tr>
   <td>
-    3. No computador local, abra o prompt de comando, crie uma pasta e execute o seguinte comando e forneça as Credenciais do repositório, solicitadas:
+    &#x200B;3. No computador local, abra o prompt de comando, crie uma pasta e execute o seguinte comando e forneça as Credenciais do repositório, solicitadas:
     </br>
     <code> git clone [Repository URL] </code> </br></br>
     Por exemplo, </br> 
@@ -248,7 +252,7 @@ Após a conclusão bem-sucedida do comando, uma pasta de projeto com o nome espe
 </tr>
 <tr>
   <td>
-    3. Para o seu pipeline, toque no ... ícone e selecione a opção <b> Executar </b>. Se solicitado a executar o pipeline, toque em <b> Executar </b> e aguarde o pipeline <b> Status </b> mudar para <b> Concluído </b>.  
+    &#x200B;3. Para o seu pipeline, toque no ... ícone e selecione a opção <b> Executar </b>. Se solicitado a executar o pipeline, toque em <b> Executar </b> e aguarde o pipeline <b> Status </b> mudar para <b> Concluído </b>.  
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
