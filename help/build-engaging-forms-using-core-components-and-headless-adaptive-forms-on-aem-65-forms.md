@@ -19,9 +19,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+source-git-commit: 33435b2ff6c7ff5c936f9256889d1f85f977adfe
 workflow-type: tm+mt
-source-wordcount: 2311
+source-wordcount: 2301
 ht-degree: 39%
 
 ---
@@ -71,15 +71,15 @@ Nesta lição, você se familiariza com o AEM 6.5 Forms navegando na interface d
 
 1. Após fazer o logon, acesse a interface do AEM Forms. Clique em **Formulários**.
 
-   ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113829.png){width="50%"}
 
 1. Clique em **Formulários e documentos**. Ignore quaisquer pop-ups relacionados a preferências ou informações.
 
-   ![](/help/assets/screenshot2028113929.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113929.png){width="50%"}
 
    Todos os formulários disponíveis serão exibidos.
 
-   ![](/help/assets/screenshot2028114029.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028114029.png){width="50%"}
 
 ## Lição 2
 
@@ -96,10 +96,10 @@ Como usuário empresarial, você usará o editor Forms adaptável e seus Compone
 1. Crie um ponto de acesso de envio para o formulário:
 
    1. Abra <https://pipedream.com/requestbin> em uma nova guia do navegador.
-      ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028114329.png){width="50%"}
 
    1. Clique em **Criar um compartimento público** e copie a URL do ponto de acesso.
-      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
+      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%"}
 
    Esse endpoint específico serve como exemplo para enviar e exibir dados. Na produção real, você usa seu próprio endpoint ou fontes de dados para armazenar os dados capturados.
 
@@ -108,13 +108,13 @@ Como usuário empresarial, você usará o editor Forms adaptável e seus Compone
    1. Na guia do navegador usada na Lição 1, navegue até a interface da Web do AEM Forms e navegue até **Forms** > **Forms e Documentos**.
 
    1. Clique em **Criar** e selecione Formulário adaptável.
-      ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
+      ![](/help/assets/creating-adaptive-form-6-5.png){width="50%"}
 
    1. Selecione o modelo **Em branco com Componentes Principais** na tela de seleção de modelo como mostrado abaixo e clique em **Avançar**.
-      ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
+      ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%"}
 
    1. Especifique `Contact us` como o **Título** do formulário. Verifique se o **Nome** do formulário é `contact-us`.
-      ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
+      ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%"}
 
    1. Clique em **Criar**. Uma caixa de diálogo é exibida.
 
@@ -122,11 +122,11 @@ Como usuário empresarial, você usará o editor Forms adaptável e seus Compone
 
    1. Abra o navegador Componentes e arraste e solte o componente Painel no meio da tela.
 
-      ![](/help/assets/lab65-add-panel.png){width="50%" align="left"}
+      ![](/help/assets/lab65-add-panel.png){width="50%"}
 
    1. Arraste e solte componentes do navegador Componentes para criar um formulário, semelhante ao seguinte:
 
-      ![](/help/assets/contact-us-headless-adaptive-form.png){width="50%" align="left"}
+      ![](/help/assets/contact-us-headless-adaptive-form.png){width="50%"}
 
 
    1. Abra o Navegador de Conteúdo, clique no ícone de propriedades do Contêiner do Guia e abra a guia **Envio**.
@@ -135,7 +135,7 @@ Como usuário empresarial, você usará o editor Forms adaptável e seus Compone
 
    1. Selecione a opção **Habilitar solicitação POST** e especifique o ponto de extremidade REST criado na lição 2 na caixa de texto **URL para solicitação POST** e clique no ícone **Concluído**.
 
-      ![](/help/assets/configure-submit-action.png){width="50%" align="left"}
+      ![](/help/assets/configure-submit-action.png){width="50%"}
 
 1. Publicar um formulário adaptável:
 
@@ -159,7 +159,7 @@ Configurar um repositório local do tema:
 
 1. Abra o prompt de comando ou o shell com direitos de administrador:
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 1. No Prompt de Comando, use o seguinte comando para navegar até a pasta `c:\git`.
 
@@ -182,19 +182,19 @@ Configurar um repositório local do tema:
    code .
    ```
 
-   ![](/help/assets/screenshot2028126029.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028126029.png){width="50%"}
 
 1. Selecione **Confiar nos autores de todos os arquivos da pasta pai** e clique em **Sim, eu confio nos autores**.
 
-   ![](/help/assets/screenshot2028116229.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116229.png){width="50%"}
 
 1. Renomeie o arquivo `env_template` como .env.  Para renomear o arquivo, clique com o botão direito no arquivo **env_template** e selecione a opção **Renomear**.
 
-   ![](/help/assets/screenshot2028116429.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028116429.png){width="30%"}
 
    </br>
 
-   ![](/help/assets/screenshot2028116529.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116529.png){width="50%"}
 
 1. Defina os seguintes valores para as variáveis no arquivo .env e salve o arquivo:
 
@@ -235,12 +235,12 @@ Configurar um repositório local do tema:
    >Se você passar por uma tela em branco no navegador após executar o comando `npm run live` por mais de 3 a 4 minutos, altere `localhost` na URL do navegador para 127.0.0.1 e pressione **Enter**.
 
 
-   ![](/help/assets/contact-us-headless-adaptive-form-with-canvas-theme.png){width="50%" align="left"}
+   ![](/help/assets/contact-us-headless-adaptive-form-with-canvas-theme.png){width="50%"}
 
 
 1. No Visual Studio Code, abra o arquivo `PROJECT\src\site\_variables.scss`. Observe que a cor do `$error` é um tom de VERMELHO.
 
-   ![](/help/assets/screenshot2028120729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028120729.png){width="50%"}
 
 1. No navegador, envie o formulário para ver a cor vermelha no campo **Nome**.
 
@@ -271,7 +271,7 @@ Configure um repositório local usando o projeto inicial do React:
 
 1. Abra o prompt de comando usando direitos de administrador.
 
-   ![](/help/assets/screenshot2028115829.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="30%"}
 
 1. No Prompt de Comando, use o seguinte comando para navegar até a pasta `c:\git`.
 
@@ -300,13 +300,13 @@ Configure um repositório local usando o projeto inicial do React:
 
    A janela do Visual Studio Code é aberta.
 
-   ![](/help/assets/screenshot2028117429.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028117429.png){width="50%"}
 
 Para renderizar o formulário hospedado em seu ambiente de publicação:
 
 1. Renomeie o arquivo env_template para o arquivo .env. Para renomear, clique com o botão direito no arquivo **env_template** e selecione a opção **Renomear**.
 
-   ![](/help/assets/screenshot2028117629.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028117629.png){width="30%"}
 
    ![](/help/assets/screenshot2028117729.png)
 
@@ -355,7 +355,7 @@ Vamos fazer alterações no formulário no servidor como um usuário empresarial
 
 1. Selecione o campo **Número do contato** e clique no **ícone Editar (ícone de Lápis)** na barra de ferramentas. Se você não conseguir ver a barra de ferramentas pop-up, alterne para o modo Editar. Clique no botão **Editar** na parte superior direita, à esquerda do botão **Visualizar**.
 
-   ![](/help/assets/change-field-title.png){width="50%" align="left"}
+   ![](/help/assets/change-field-title.png){width="50%"}
 
 1. Altere o rótulo para **Número de celular**. Clique em qualquer espaço vazio no formulário e as alterações serão salvas.
 
@@ -397,7 +397,7 @@ Configure um repositório local usando o projeto inicial da interface do Materia
 
 1. Abra o prompt de comando usando direitos de administrador.
 
-   ![](/help/assets/screenshot2028115829.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="30%"}
 
 1. No Prompt de Comando, use o seguinte comando para navegar até a pasta `c:\git`.
 
@@ -435,7 +435,7 @@ Para renderizar o formulário hospedado em seu ambiente de publicação:
 
 1. Renomeie o arquivo **env_template** para o arquivo **.env**. Para renomear, clique com o botão direito no arquivo **env_template** e selecione **Renomear**.
 
-   ![](/help/assets/screenshot2028126629.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028126629.png){width="30%"}
 
 1. Defina os seguintes valores para as variáveis no arquivo .env. Depois de atualizar as variáveis, salve o arquivo. Use as teclas **CTRL+S** para salvar o arquivo.
 
@@ -506,7 +506,7 @@ Atualize a variação de componentes no projeto headless. Para alterar a variant
 
 1. Atualize o navegador, se ele não for atualizado automaticamente, para ver o componente de entrada de texto usar uma variante diferente.
 
-   ![](/help/assets/screenshot2028127729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028127729.png){width="50%"}
 
 
    Essa alteração ocorre para usuários finais sem nenhuma alteração na definição de formulário no AEM Forms Server e é específica para o headless

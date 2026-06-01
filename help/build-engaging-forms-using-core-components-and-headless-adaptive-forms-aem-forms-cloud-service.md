@@ -12,9 +12,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+source-git-commit: 33435b2ff6c7ff5c936f9256889d1f85f977adfe
 workflow-type: tm+mt
-source-wordcount: 2629
+source-wordcount: 2589
 ht-degree: 52%
 
 ---
@@ -66,13 +66,13 @@ Nesta lição, você poderá se familiarizar com o AEM Forms as a Cloud Service 
 1. Abra o navegador e insira o URL do ambiente de autor do Cloud Service. <!-- URL is 404! EXPLAIN THE URL IS FOR ILLUSTRATION PURPOSES ONLY? For example: [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html) -->
 
 1. Faça logon no ambiente de criação do Cloud Service.
-   ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113829.png){width="50%"}
 
 1. Para navegar até a interface do usuário do AEM Forms, clique em **Forms > Forms e Documentos**.
 
 
 
-   ![](/help/assets/screenshot2028113929.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113929.png){width="50%"}
 
    Ignore quaisquer pop-ups relacionados a preferências ou informações. Todos os formulários disponíveis serão exibidos.
 
@@ -93,9 +93,9 @@ Nesta lição, você atuará como um usuário empresarial e criará um adaptive 
 
    1. Abra <https://pipedream.com/requestbin> em uma nova guia do navegador.
    1. Clique em **Criar um compartimento público** e copie a URL do ponto de acesso.
-      ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028114329.png){width="50%"}
 
-      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
+      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%"}
 
 1. Crie um formulário adaptável usando a interface do assistente:
 
@@ -116,21 +116,21 @@ Nesta lição, você atuará como um usuário empresarial e criará um adaptive 
 
    1. Clique em **Criar**. Especifique um nome e um título no formulário. Por exemplo, **registro**. Clique em **Criar**.
 
-   1. O editor de formulário adaptável é aberto. Ignore quaisquer pop-ups ou caixas de diálogo de preferências ou informações. Clique no navegador de componentes no painel à esquerda e adicione os componentes **Cabeçalho** e **Rodapé** respectivamente à parte superior e inferior do formulário em branco.
+   1. O editor de formulário adaptável é aberto. Ignore pop-ups ou caixas de diálogo para preferências ou informações. Clique no navegador de componentes no painel à esquerda e adicione os componentes **Cabeçalho** e **Rodapé** respectivamente à parte superior e inferior do formulário em branco.
       ![](/help/assets/screenshot2028121929.png)
 
    1. Arraste e solte componentes do navegador Componentes para criar um formulário, semelhante ao seguinte:
 
-      ![](/help/assets/screenshot2028115129.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028115129.png){width="50%"}
 
 1. Adicionar validações ao formulário:
 
    1. Clique no componente **Número de telefone** para que o menu pop-up seja exibido. Clique no **ícone de ferramenta** no menu para configurar o campo.
 
-   1. Abra a **guia de validações**, marque o campo **Obrigatório** e clique em **Concluído**. A mensagem de sucesso é exibida.
-      ![](/help/assets/screenshot2028123529.png){width="50%" align="left"}
+   1. Abra a **guia Validações**, marque o campo **Obrigatório** e clique em **Concluído**. A mensagem de sucesso é exibida.
+      ![](/help/assets/screenshot2028123529.png){width="50%"}
 
-      ![](/help/assets/screenshot2028123629.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028123629.png){width="50%"}
 
 1. Visualize e envie o formulário.
 
@@ -183,7 +183,7 @@ Configurar um repositório local do tema:
 
 1. Abra o prompt de comando ou o shell com direitos de administrador:
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 1. No prompt de comando, use o seguinte comando para navegar até a pasta **c:\git**
 
@@ -209,15 +209,15 @@ Configurar um repositório local do tema:
 
 1. Selecione **Confiar nos autores de todos os arquivos da pasta pai** e clique em **Sim, eu confio nos autores**.
 
-   ![](/help/assets/screenshot2028116229.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116229.png){width="50%"}
 
 1. Para renderizar o formulário hospedado no ambiente de publicação do Cloud Service, renomeie o arquivo `env_template`.  Para renomear o arquivo, clique com o botão direito no arquivo **env_template** e selecione a opção **Renomear**.
 
-   ![](/help/assets/screenshot2028116429.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116429.png){width="50%"}
 
    </br>
 
-   ![](/help/assets/screenshot2028116529.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116529.png){width="50%"}
 
 1. Defina os seguintes valores para as variáveis no arquivo .env e salve o arquivo:
 
@@ -225,7 +225,7 @@ Configurar um repositório local do tema:
 
    * **AEM_ADAPTIVE_FORM**: especifica o caminho do formulário. Por exemplo, se o caminho do formulário for `/content/forms/af/registration`, o valor dessa variável será `registration`.
 
-     ![](/help/assets/screenshot2028116429.png){width="50%" align="left"}
+     ![](/help/assets/screenshot2028116429.png){width="50%"}
 
 1. Crie um usuário local no ambiente do AEM.
 
@@ -265,12 +265,12 @@ Configurar um repositório local do tema:
    >Se você passar por uma tela em branco no navegador após executar o comando `npm run live` por mais de 3 a 4 minutos, altere `localhost` na URL do navegador para 127.0.0.1 e pressione **Enter**.
 
 
-   ![](/help/assets/screenshot2028115129.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115129.png){width="50%"}
 
 
 1. No Visual Studio Code, abra o arquivo `PROJECT\src\site\_variables.scss`. Observe que a cor do `$error` é um tom de VERMELHO.
 
-   ![](/help/assets/screenshot2028120729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028120729.png){width="50%"}
 
 1. No navegador, envie o formulário para ver a cor vermelha no campo **Nome**.
 
@@ -278,7 +278,7 @@ Configurar um repositório local do tema:
 
 1. Defina a cor do **$error** para **#5736eb** e salve o arquivo.
 
-   ![](/help/assets/screenshot2028120729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028120729.png){width="50%"}
 
 1. Atualize o navegador e envie o formulário. Observe que a cor do erro no campo de nome foi alterada de acordo.
 
@@ -303,7 +303,7 @@ Configure um repositório local usando o projeto inicial do React:
 
 1. Abra o prompt de comando usando direitos de administrador.
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 1. No prompt de comando, use o seguinte comando para navegar até a pasta **c:\git**
 
@@ -332,13 +332,13 @@ Configure um repositório local usando o projeto inicial do React:
 
    A janela do Visual Studio Code é aberta.
 
-   ![](/help/assets/screenshot2028117429.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028117429.png){width="50%"}
 
 Para renderizar o formulário hospedado no ambiente de publicação do Cloud Service:
 
 1. Renomeie o arquivo env_template para o arquivo .env. Para renomear, clique com o botão direito no arquivo **env_template** e selecione a opção **Renomear**.
 
-   ![](/help/assets/screenshot2028117629.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028117629.png){width="50%"}
 
    ![](/help/assets/screenshot2028117729.png)
 
@@ -436,7 +436,7 @@ Configure um repositório local usando o projeto inicial da interface do Materia
 
 1. Abra o prompt de comando usando direitos de administrador.
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 
 1. No prompt de comando, use o seguinte comando para navegar até a pasta **c:\git**:
@@ -475,7 +475,7 @@ Para renderizar o formulário hospedado no ambiente de publicação do Cloud Ser
 
 1. Renomeie o arquivo **env_template** para o arquivo **.env**. Para renomear, clique com o botão direito no arquivo **env_template** e selecione **Renomear**.
 
-   ![](/help/assets/screenshot2028126629.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028126629.png){width="50%"}
 
 1. Defina os seguintes valores para as variáveis no arquivo .env. Depois de atualizar as variáveis, salve o arquivo. Use as teclas **CTRL+S** para salvar o arquivo.
 
@@ -514,7 +514,7 @@ Biblioteca de front-end da interface do usuário do Material.
 
    Selecione **Marque a caixa para receber 5% de desconto**. A opção subsequente **Gostaria de aplicar o Formulário de Cartão de Crédito Corporativo `We.Finance`?** é desativado.
 
-   ![](/help/assets/screenshot2028127329.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028127329.png){width="50%"}
 
 ## Lição 6
 
@@ -560,7 +560,7 @@ Atualize a variação de componentes no projeto headless. Para alterar a variant
    Essa alteração ocorre para usuários finais sem nenhuma alteração na definição de formulário no AEM Forms Server e é específica para o headless
 canal em consideração. Por exemplo, um canal da Web neste laboratório.
 
-   ![](/help/assets/screenshot2028127529.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028127529.png){width="50%"}
 
 
 1. Feche as janelas do Visual Studio Code e do prompt de comando.
