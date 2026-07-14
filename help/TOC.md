@@ -5,7 +5,8 @@ user-guide-description: Documentação dos formulários adaptáveis do Adobe Exp
 feature: Adaptive Forms
 role: Developer
 index: true
-source-git-commit: 3af67fd41cdd1e63a460e56ef1d273c90b3954d7
+nudge: true
+source-git-commit: 2b4840d39f7e98684003a941e96f45dede196f23
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 3%
@@ -34,8 +35,8 @@ ht-degree: 3%
 + Criar formulários adaptáveis headless {#authoring-headless-adaptive-forms}
    + [Criar um formulário adaptável headless usando o editor adaptável do Forms](create-a-headless-adaptive-form.md)
 + Referência do desenvolvedor {#developer-reference}
-   + [Portal do desenvolvedor](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=pt-BR)
-   + [Playground de código](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=pt-BR)
+   + [Portal do desenvolvedor](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en)
+   + [Playground de código](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
    + [APIs de formulários adaptáveis headless](https://opensource.adobe.com/aem-forms-af-runtime/api/)
 + [Perguntas frequentes](faq.md)
 + [Resolução de problemas](troubleshooting.md)
