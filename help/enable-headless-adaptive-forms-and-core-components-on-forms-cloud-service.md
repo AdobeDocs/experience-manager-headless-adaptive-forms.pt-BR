@@ -9,22 +9,18 @@ level: Beginner, Intermediate
 contentOwner: Khushwant Singh
 docset: CloudService
 hide: true
-exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
 TQID: https://experienceleague.adobe.com/T5J7Am-NsZ-hzZkRRg3LEk0anMjhXaEznf1bijy2H-Q
-product_v2:
-  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: cc2553bb4b16ea8c31664c227921c4e91d1c7a62
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
+source-git-commit: 64fe5704fcd6ace7461a02007d99710233b74d22
 workflow-type: tm+mt
-source-wordcount: 943
-ht-degree: 4%
+source-wordcount: 931
+ht-degree: 3%
 
 ---
+
 
 # Habilitar o Forms adaptável headless no AEM Forms as a Cloud Service {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
@@ -33,23 +29,18 @@ Ativar o headless Adaptive Forms no AEM Forms as a Cloud Service permite começa
 ## Considerações
 
 * Ao criar um novo programa AEM Forms as a Cloud Service, o [Headless Adaptive Forms já está habilitado para os seus ambientes](#are-adaptive-forms-core-components-enabled-for-my-environment).
-
 * Se você estiver executando um programa mais antigo do Forms as a Cloud Service em que os Componentes principais [não estão habilitados](#enable-components), primeiro [adicione as dependências dos Componentes principais do Adaptive Forms](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) ao seu repositório do Cloud Service. Implante o repositório atualizado em cada ambiente para ativar formulários adaptáveis headless.
-
 * Se seu ambiente do Cloud Service já permite [criar formulários adaptáveis baseados em Componentes principais](create-a-headless-adaptive-form.md), os formulários adaptáveis headless serão habilitados automaticamente. Você pode fornecer esses formulários como experiências headless para aplicativos móveis, da Web, nativos ou qualquer serviço que os exija.
 
 >[!NOTE]
 >
->
-> A Adobe fornece um [kit inicial (Aplicativo React)](create-and-publish-a-headless-form.md) do Adaptive Forms para ajudar os desenvolvedores a iniciar rapidamente o desenvolvimento do Forms Adaptive Headless, sem ativar o Forms Adaptive Headless no ambiente do AEM Forms as a Cloud Service. Você pode habilitar o Forms Adaptável Headless em um ambiente do Forms as a Cloud Service posteriormente após uma [rápida interação com o desenvolvimento de formulários headless](create-and-publish-a-headless-form.md).
+>A Adobe fornece um [kit inicial (Aplicativo React)](create-and-publish-a-headless-form.md) do Adaptive Forms para ajudar os desenvolvedores a iniciar rapidamente o desenvolvimento do Forms Adaptive Headless, sem ativar o Forms Adaptive Headless no ambiente do AEM Forms as a Cloud Service. Você pode habilitar o Forms Adaptável Headless em um ambiente do Forms as a Cloud Service posteriormente após uma [rápida interação com o desenvolvimento de formulários headless](create-and-publish-a-headless-form.md).
 
 ## Habilitar o Forms adaptável headless para um ambiente do AEM Forms as a Cloud Service
 
 Execute as seguintes etapas, na ordem listada, para ativar o Headless Adaptive Forms para um ambiente do AEM Forms as a Cloud Service
 
-<!-- Missing image ALT tag -->
-![](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
-
+![habilitar imagem de formulários](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 ## &#x200B;1. Clonar o repositório Git do AEM Forms as a Cloud Service {#clone-git-repository}
 
@@ -207,18 +198,18 @@ Execute as seguintes etapas, na ordem listada, para ativar o Headless Adaptive F
    >[!NOTE]
    >
    >
-   >  Substitua `${appId}` com sua appId.
+   >Substitua `${appId}` com sua appId.
    >
-   >  Para encontrar seu `${appId}`, no arquivo `[AEM Repository Folder]/all/pom.xml`, pesquise o termo `-packages/application/install`. O texto antes do termo `-packages/application/install` é o seu `${appId}`. Por exemplo, o código a seguir, `myheadlessform` é `${appId}`.
+   >Para encontrar seu `${appId}`, no arquivo `[AEM Repository Folder]/all/pom.xml`, pesquise o termo `-packages/application/install`. O texto antes do termo `-packages/application/install` é o seu `${appId}`. Por exemplo, o código a seguir, `myheadlessform` é `${appId}`.
    >
-   >   ```
-   >             <embedded>
-   >                     <groupId>com.myheadlessform</groupId>
-   >                     <artifactId>myheadlessform.ui.apps<artifactId>
-   >                     <type>zip</type>
-   >                   <target>/apps/myheadlessform-packages/application install</target>
-   >             </embedded>
-   >   ```
+   >```
+   >         <embedded>
+   >                 <groupId>com.myheadlessform</groupId>
+   >                 <artifactId>myheadlessform.ui.apps<artifactId>
+   >                 <type>zip</type>
+   >               <target>/apps/myheadlessform-packages/application install</target>
+   >         </embedded>
+   >```
 
 1. Na seção `<dependencies>` do arquivo `[AEM Repository Folder]/all/pom.xml`, adicione as seguintes dependências e salve o arquivo:
 
@@ -311,7 +302,7 @@ Execute as seguintes etapas, na ordem listada, para ativar o Headless Adaptive F
       git push origin
       ```
 
-1. Depois que os arquivos forem confirmados no Repositório Git, [Execute o pipeline](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/using/code-deployment).
+1. Depois que os arquivos forem confirmados no Repositório Git, [Execute o pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-deployment).
 
    Depois que a execução do pipeline for bem-sucedida, os Componentes principais adaptáveis do Forms serão ativados para o ambiente correspondente. Além disso, um modelo de Forms adaptável (Componentes principais) e o tema do Canvas 3.0 são adicionados ao ambiente do Forms as a Cloud Service, fornecendo opções para personalizar e criar Componentes principais com base no Adaptive Forms.
 
