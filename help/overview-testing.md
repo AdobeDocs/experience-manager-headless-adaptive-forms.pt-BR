@@ -8,7 +8,6 @@ role: Admin, Developer
 level: Beginner, Intermediate
 keywords: CMS headless, formulários adaptáveis, interface do usuário headless, Headful CMS, assistentes de voz, alexa, chatbots, arquitetura WhatsApp
 hide: true
-exl-id: f6a383ea-684b-479d-a15f-8ebced75635e
 TQID: https://experienceleague.adobe.com/HMhHwfjQTZe2BaoMbMilfOJ0-GZrZsHTGjTBqeU-ORM
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
@@ -22,12 +21,14 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: cc2553bb4b16ea8c31664c227921c4e91d1c7a62
+exl-id: f6a383ea-684b-479d-a15f-8ebced75635e
+source-git-commit: 64fe5704fcd6ace7461a02007d99710233b74d22
 workflow-type: tm+mt
 source-wordcount: 331
 ht-degree: 0%
 
 ---
+
 
 # Introdução
 
@@ -45,7 +46,6 @@ Os formulários adaptáveis headless ajudam a fazer o seguinte:
 Além disso, você tem a liberdade de desenvolver seus próprios componentes para renderizar um formulário usando qualquer estrutura de interface do usuário e linguagem de programação de sua escolha. Você também pode usar os componentes do React disponíveis prontos para uso para renderizar um formulário adaptável headless.
 
 <!-- 
-
 ## Key Features
 
 <table style="width:100%;">
@@ -188,8 +188,8 @@ Além disso, você tem a liberdade de desenvolver seus próprios componentes par
         <p>Description 3</p>
     </div>
 </div>
-
 -->
+
 <!-- Add more cards as needed -->
 
 ## Quem pode usar formulários adaptáveis headless? {#who-can-use-headless-adaptive-forms}
@@ -202,5 +202,4 @@ Você não precisa de conhecimento prévio do Adobe Experience Manager para dese
 ## How to join the early adopter program? {#how-to-join-early-adopter-forms}
 
 The service is available for AEM Forms as a Cloud Service and AEM 6.5.16.0 Forms or later On-Premise term customers and Adobe-Managed Service enterprise customers. Send an email to [headlessadaptiveforms@adobe.com](mailto:headlessadaptiveforms@adobe.com) from your official email ID to join the early adopter program. 
-
 -->
