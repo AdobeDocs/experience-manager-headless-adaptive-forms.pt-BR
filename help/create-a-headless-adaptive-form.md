@@ -8,25 +8,36 @@ role: Admin, Developer
 level: Beginner, Intermediate
 index: true
 exl-id: 0214dc2e-52ce-40e9-bef3-f4f4a7ff266f
-TQID: https://experienceleague.adobe.com/-oczwo5CsVwXdzfKgQ9WwM16vBoPY4BVW-02Oeht1A4
+TQID: 'https://experienceleague.adobe.com/-oczwo5CsVwXdzfKgQ9WwM16vBoPY4BVW-02Oeht1A4'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: ce44533e-8ec8-4e11-a9e9-78b0fe561832
-source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+    internal-label: Content structure
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
-source-wordcount: 1328
+source-wordcount: '1328'
 ht-degree: 48%
-
 ---
-
 # Criar um formulário adaptável headless usando o editor adaptável do Forms {#create-a-headless-adaptive-form-using-adaptive-forms-editor}
 
 O AEM Forms as a Cloud Service oferece um editor simples para criar Forms adaptável headless. Com mais de 24 componentes principais disponíveis, você pode criar facilmente um formulário arrastando e soltando componentes no editor. Além disso, o editor de regras permite adicionar validações aos campos de formulário.
@@ -61,8 +72,8 @@ Você precisa do seguinte para criar um Formulário adaptável usando o editor F
 
 * **Modelo de formulário adaptável**: um modelo fornece uma estrutura básica e define a aparência (layouts e estilos) de um formulário adaptável. Ele tem componentes pré-formatados que contêm determinadas propriedades e estrutura de conteúdo. Também fornece as opções para definir um tema e enviar uma ação. O tema define a aparência, e a ação de envio define a ação a ser executada no envio de um formulário adaptável. Por exemplo, enviar os dados coletados para uma fonte de dados. O serviço de nuvem fornece um modelo OOTB, chamado de em branco:
 
-   * O modelo `blank Adaptive Forms (Core Components)` está incluído em todos os novos programas do AEM Forms as a Cloud Service.
-   * Você também pode [criar um novo modelo de Forms adaptável (Componentes principais)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor) do zero.
+  * O modelo `blank Adaptive Forms (Core Components)` está incluído em todos os novos programas do AEM Forms as a Cloud Service.
+  * Você também pode [criar um novo modelo de Forms adaptável (Componentes principais)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor) do zero.
 
 * **Um tema de formulários adaptáveis**: um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Ao aplicar um tema, o estilo especificado é refletido nos componentes correspondentes.  O modelo `Canvas` está incluído em todos os novos programas do AEM Forms as a Cloud Service.
 
