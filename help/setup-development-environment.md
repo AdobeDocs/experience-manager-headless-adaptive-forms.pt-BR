@@ -3,13 +3,14 @@ title: Configurar ambiente de desenvolvimento para formulários adaptáveis do A
 description: Configurar ambiente de desenvolvimento para formulários adaptáveis do AEM Headless
 hide: true
 exl-id: fd92f057-1217-42f8-a454-1bc7e3827e01
-source-git-commit: 893f0428c08e6216cb293ab2f4c427b7d1c26060
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '805'
 ht-degree: 3%
-
 ---
-
 
 # Configuração de um ambiente de desenvolvimento local {#headless-adaptive-forms-setup-development-environment}
 
@@ -78,7 +79,7 @@ Ela está no formato .zip. A versão compatível é aem-sdk-2022.7.8085.20220725
 
    >[!NOTE]
    >
-   > Não clique duas vezes no arquivo .jar para iniciá-lo. Resulta em um [erro](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click).
+   > Não clique duas vezes no arquivo .jar para iniciá-lo. Resulta em um [erro](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click).
 
 1. Abra o prompt de comando:
    * No Windows, use a opção **Executar como Administrador** para abrir o prompt de comando no modo elevado.
